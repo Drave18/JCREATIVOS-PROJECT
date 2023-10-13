@@ -3,39 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/main.css"> <!-- Enlaza el archivo CSS general -->
-    <link rel="stylesheet" href="styles/index.css"> <!-- Enlaza el archivo CSS específico para la página de inicio -->
-    <title>Tu Empresa</title>
+    <link rel="stylesheet" href="styles/main.css"> <!-- CSS general -->
+    <link rel="stylesheet" href="styles/index.css">     <!-- css del index -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Takt</title>
 </head>
 <body>
-    <!-- Encabezado (puede estar en un archivo includes/header.html) -->
     <header>
-        <h1>Nombre de la Empresa</h1>
+            <nav>
+                <ul> 
+                    <a href="index.html" class="logo">TAKT</a>
+                    <div class="centered">
+                        <a href="#">Acerca de</a>
+                        <a href="#">Servicios</a>
+                        <a href="#">Contacto</a>
+                        <a href="#">Reseñas</a>
+                    </div>
+                    <div class="right-aligned">
+                        <button class="m-button" id="login">
+                            Iniciar Sesion
+                        </button>
+                        <button class="m-button" id="register">
+                            Registrarte
+                        </button>
+                    </div>
+                </ul>
+            </nav>
     </header>
+    <section class="hero">
+        <h1>Bienvenido a <span class="highlighted_text">TAKT</span>, tu <br> compañero confiable en el <br> emocionante mundo de <br>la tecnología!</h1>
+    </section>
+    <section class="description">
+        <div class="container">
+            <div class="img-container">
+                <img src="img/component-repairing.jpg" alt="reparacion de componente">
+            </div>
+            <button class="cotiza">Cotiza tu mantenimiento</button>
+            <h2>EL SERVICIO DE MANTENIMIETO QUE NECESITAS</h2>
+            <p>
+                Somos expertos en la reparación de dispositivos electrónicos, con un enfoque especializado en computadoras,
+                portátiles y móviles. Nuestro equipo está certificado y altamente capacitado para brindarte soluciones tecnológicas
+                de primera clase.
+                Entendemos que la tecnología puede ser un enigma, pero no te preocupes, ¡estamos aquí para descifrarlo contigo!
+                Nuestra misión es ayudarte a recuperar el control de tus dispositivos y hacer que vuelvan a funcionar como nuevos.
+            </p>
+        </div>
+    </section>
+    <section id="landing-services">
+        <div class="container">
+            <h2>QUE DESEAS REPARAR?</h2>
+            <div class="widget">
+                <h3>Portatil</h3>
+                <img src="img/icon _Laptop_.svg" alt="laptop">
+            </div>
+            <div class="widget">
+                <h3>PC</h3>
+                <img src="img/icon_pc.svg" alt="PC">
+            </div>
+            <div class="widget">
+                <h3>Componente</h3>
+                <img src="img/icon _circuit board_.svg" alt="componente">
+            </div>
+            <p>
+                Entendemos que los computadores portátiles pueden tener una vida útil prolongada, pero con el tiempo es común que dejen
+                de funcionar tan eficientemente como cuando fueron adquiridos. Estos problemas suelen surgir debido muchos factores,
+                como la acumulación de suciedad, daños causados por un mal uso, accidentes por golpes o derrames de líquido, virus,
+                falta de memoria RAM o almacenamiento, sobrecalentamiento, problemas en la pantalla debido a cortocircuitos o fallas en
+                la batería. Los daños en los computadores pueden ser tanto externos como internos, y en nuestro taller nos
+                especializamos en solucionarlos.
+            </p>
 
-    <!-- Menú de Navegación -->
-    <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Acerca de</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Reseñas</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
+            <p class="disclaimer">
+                *Los precios varian de acuerdo a su dispositivo
+            </p>
+            <div class="box-list">
+                <div class="list">
+                    <ul>
+                        <h4>
+                            Hardware(30K-500K)
+                        </h4>
+                        <li>Mantenimiento Fisico</li>
+                        <li>Cambio de teclado</li>
+                        <li>Reprogramacion de BIOS</li>
+                        <li>Reemplazo y reparacion de carcasa</li>
+                        <li>Cambio de Trackpad</li>
+                        <li>Reparacion  o cambio de Bisagras</li>
+                        <li>Reemplazo de ventiladores y disipadores de calor</li>
+                        <li>Correccon de errores de sobrecalentamiento</li>
+                    </ul>
+                </div>  
+            </div>
+            <div class="list">
+                <ul>
+                    <h4>
+                        Software(50k-150K)
+                    </h4>
+                    <li>Reprogramacion</li>
+                    <li>Correccion de erorres ocasionados por virus</li>
+                    <li>Copias de seguridad(backups)</li>
+                    <li>Instalacion de programas</li>
+                    <li>Configuracion del sistema operativo</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-    <!-- Contenido de la Página de Inicio -->
-    <main>
-        <!-- Resto de tu contenido de la página de inicio aquí -->
-    </main>
+    <section class="why-us">
+        <div class="container"> 
+            <h2>Por que nosotros?</h2>
+            <p>      
+                    En el competitivo mundo de la reparación y mantenimiento de portátiles, estamos orgullosos de ofrecer un servicio
+                    excepcional que se destaca por varias razones: <br><br>
 
-    <!-- Pie de Página (puede estar en un archivo includes/footer.html) -->
+                <b>1.Experiencia y Conocimiento:</b> Con años de experiencia en la industria, nuestros técnicos altamente capacitados tienen un
+                profundo conocimiento de las complejidades de los portátiles y pueden diagnosticar y solucionar una amplia gama de
+                problemas, desde fallas de hardware hasta problemas de software.<br><br>
+
+                <b>2.Servicio Personalizado:</b> Tratamos cada portátil con el mismo cuidado y atención que si fuera propio. Nos esforzamos por
+                brindar un servicio personalizado y adaptado a las necesidades específicas de cada cliente.<br><br>
+
+                <b>3.Rápido y Eficaz:</b> Sabemos lo importante que es su portátil en su vida diaria. Trabajamos de manera eficiente para
+                minimizar el tiempo de inactividad de su dispositivo, asegurándonos de que vuelva a funcionar lo más rápido posible
+                garantizando un tiempo de entreg a de máximo 24hrs.<br><br>
+
+                <b>4.Atención al Cliente: </b>Nuestro compromiso con un servicio al cliente excepcional significa que estamos disponibles para
+                responder a sus preguntas, brindar asesoramiento y asegurarnos de que esté completamente satisfecho con nuestros
+                servicios.
+            </p>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <div class="container">  
+            <h2>Lo que dicen nuestros clientes</h2>
+            <div class="reviewcard-1">
+                <img src="" alt="opinion1"> 
+            </div>
+            <div class="reviewcard-2">
+                <img src="" alt="opinion2"> 
+            </div>
+            <div class="reviewcard-3">
+                <img src="" alt="opinion3"> 
+            </div>
+        </div>
+    </section>
+
+    <section class="call_to_action">
+        <div class="container">
+            <div class="center_text">
+                <h2>DAR SOLUCION</h2>
+                <p>*Realize su consulta sin ningun costo!</p>
+            </div>
+            <div class="center_button">
+                <button class="action-buttons">
+                    <img src="img/icon _phone_.svg" alt="Celular">
+                    Celular
+                </button>
+                <button class="action-buttons">
+                    <img src="img/icon _email_.svg" alt="Correo">
+                    Correo
+                </button>
+                <button class="action-buttons">
+                    <img src="img/icon _whatsapp_.svg" alt="Whatsapp">
+                    Whatsapp
+                    
+                </button>
+            </div>
+        </div>
+    </section>
     <footer>
-        <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Instagram</a></li>
-        </ul>
+        <div class="maintext-footer">
+            <h3>TAKT</h2>
+            <p>
+                TAKT es tu aliado confiable en el mundo de la tecnología. Nos especializamos en ofrecer servicios de reparación de
+                dispositivos electrónicos, centrándonos en computadoras, portátiles y móviles.
+            </p>
+        </div>
+        <div class="servicios-footer">
+            <h3>Servicios Especializados</h3>
+            <ul>
+                <li><a href="">Optimización de computadoras</a></li>
+                <li><a href="">Recuperación de archivos</a></li>
+                <li><a href="">Reparación de tarjetas gráficas</a></li>
+            </ul>
+        </div>
+        <div class="contacto-footer">
+            <h3>Contacto</h3>
+            <ul>
+                <li><a href="">taktmantenimientos@tech.com</a></li>
+                <li><a href="">Cra 5 #7a-76 Barranquilla, Atlantico</a></li>
+                <li><a href="">3106021157</a></li>
+            </ul>
+            <div class="socialbtns">
+                <a href=""><img src="img/icon_facebook.svg" alt="Facebook"></a>
+                <a href=""><img src="img/icon_instagram.svg" alt="Instagram"></a>
+                <a href=""><img src="img/icon_whatsapp-white.svg" alt="Whatsapp"></a>
+                <a href=""><img src="img/icon_location.svg" alt="Ubicacion"></a>
+        </div>
     </footer>
 </body>
 </html>
