@@ -352,6 +352,7 @@ footer{
     grid-template-columns: repeat(3, 1fr);
     gap: 20px; /* Space between columns */
     padding: 20px;
+    position: absolute;
     text-align: center; /*align text to center*/
 
 }
