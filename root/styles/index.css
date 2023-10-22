@@ -344,6 +344,58 @@ nav a:hover{
     margin-right: 5px;
 }
 
+/* ---------------------FOOTER TODO: ASSIGN WIDTH AND HEIGHT------------------------------- */
+footer{
+    background-color: #161616;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Space between columns */
+    padding: 20px;
+    text-align: center; /*align text to center*/
+
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.maintext-footer, .servicios-footer, .contacto-footer, .socialbtns {
+    text-align: left; /* Alineación del texto a la izquierda */
+}
+
+.maintext-footer h3, .servicios-footer h3, .contacto-footer h3 {
+    margin-bottom: 15px; /* Agregar espacio entre títulos y párrafos */
+}
+
+.servicios-footer ul,
+.contacto-footer ul,
+.servicios-footer li,
+.contacto-footer li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* AÑADIR ESPACIO ENTRE CADA LINK */
+.servicios-footer a, .contacto-footer a {
+    display: block; /* Block para usar todo el ancho disponible*/
+    margin-bottom: 10px; /*Espacio entre links*/
+}
+
+
+.socialbtns {
+    display: flex; /* desplegar botones de manera horizontal*/
+}
+.socialbtns img{
+    width: 25.58px;
+    height: 25.26px;
+}
+
+.socialbtns a {
+    margin-right: 10px; /* espacio entre botones*/
+}
 
 
 
