@@ -10,61 +10,80 @@
 </head>
 <body>
     <header>
-            <nav>
-                <ul> 
-                    <a href="index.html" class="logo">TAKT</a>
-                    <div class="centered">
-                        <a href="#">Acerca de</a>
-                        <a href="#">Servicios</a>
-                        <a href="#">Contacto</a>
-                        <a href="#">Reseñas</a>
+            <nav class="menu">
+                <ul class="menu__list"> 
+                    <a href="index.html" class="menu__logo">TAKT</a>
+                    <div class="menu__centered">
+                        <a href="#" class="menu__item">Acerca de</a>
+                        <a href="#" class="menu__item">Servicios</a>
+                        <a href="#" class="menu__item">Contacto</a>
+                        <a href="#" class="menu__item">Reseñas</a>
                     </div>
-                    <div class="right-aligned">
-                        <button class="m-button" id="login">
+                    <div class="menu__right-aligned">
+                        <button class="menu__button" id="login">
                             Iniciar Sesion
                         </button>
-                        <button class="m-button" id="register">
+                        <button class="menu__button" id="register">
                             Registrarte
                         </button>
                     </div>
                 </ul>
             </nav>
     </header>
+
     <section class="hero">
-        <h1>Bienvenido a <span class="highlighted_text">TAKT</span>, tu <br> compañero confiable en el <br> emocionante mundo de <br>la tecnología!</h1>
+        <h1>Bienvenido a <span class="hero__highlighted-text">TAKT</span>, tu <br> compañero confiable en el <br> emocionante mundo de <br>la tecnología!</h1>
     </section>
+
     <section class="description">
         <div class="container">
-            <div class="img-container">
-                <img src="img/component-repairing.jpg" alt="reparacion de componente">
+            <div class="description__items">
+                <div class="description_image-column">
+                    <img src="img/component-repairing.jpg" class="description__imagen">
+                    <div class="button-center">
+                        <button class="cotiza">Cotiza tu mantenimiento</button>
+                    </div>
+                </div>
+                <div class="description__text-column">
+                    <h2 class="description__title">EL <span class="description__highlighted-text">SERVICIO</span> DE MANTENIMIENTO <br> QUE <span class="description__highlighted-text">NECESITAS</span></h2>
+                    <p class="description__text">
+                        Somos expertos en la reparación de dispositivos electrónicos, con un enfoque especializado en computadoras,
+                        portátiles y móviles. Nuestro equipo está certificado y altamente capacitado para brindarte soluciones tecnológicas
+                        de primera clase.
+                        Entendemos que la tecnología puede ser un enigma, pero no te preocupes, ¡estamos aquí para descifrarlo contigo!
+                        Nuestra misión es ayudarte a recuperar el control de tus dispositivos y hacer que vuelvan a funcionar como nuevos.
+                    </p>
+                </div>
             </div>
-            <button class="cotiza">Cotiza tu mantenimiento</button>
-            <h2>EL SERVICIO DE MANTENIMIETO QUE NECESITAS</h2>
-            <p>
-                Somos expertos en la reparación de dispositivos electrónicos, con un enfoque especializado en computadoras,
-                portátiles y móviles. Nuestro equipo está certificado y altamente capacitado para brindarte soluciones tecnológicas
-                de primera clase.
-                Entendemos que la tecnología puede ser un enigma, pero no te preocupes, ¡estamos aquí para descifrarlo contigo!
-                Nuestra misión es ayudarte a recuperar el control de tus dispositivos y hacer que vuelvan a funcionar como nuevos.
-            </p>
         </div>
     </section>
-    <section id="landing-services">
+    <!-- ADD BEM FROM HERE -->
+    <section class="landing-services">
         <div class="container">
-            <h2>QUE DESEAS REPARAR?</h2>
-            <div class="widget">
-                <h3>Portatil</h3>
-                <img src="img/icon _Laptop_.svg" alt="laptop">
+            <h2 class="landing-services__title">¿QUE DESEAS <br> <span class="landing-services__highlighted-text">REPARAR</span>?</h2>
+            <div class="landing-services__icons">
+                <button class="button" type="button">
+                    <div class="button__content-box">
+                                            <h3 class="button__text">Portatil</h3>
+                    <img src="/root/img/icon _Laptop_.svg" alt="Imagen 1" class="button__image">
+                    </div>
+                </button>
+
+                <button class="button" type="button">
+                    <div class="button__content-box">
+                        <h3 class="button__text">PC</h3>
+                        <img src="/root/img/icon_pc.svg" alt="Imagen 2" class="button__image">
+                    </div>
+                </button>
+                
+                <button class="button" type="button">
+                    <div class="button__content-box">
+                        <h3 class="button__text">Componente</h3>
+                        <img src="/root/img/icon _circuit board_.svg" alt="Imagen 3" class="button__image">
+                    </div>
+                </button>
             </div>
-            <div class="widget">
-                <h3>PC</h3>
-                <img src="img/icon_pc.svg" alt="PC">
-            </div>
-            <div class="widget">
-                <h3>Componente</h3>
-                <img src="img/icon _circuit board_.svg" alt="componente">
-            </div>
-            <p>
+            <p class="landing-services__paragraph">
                 Entendemos que los computadores portátiles pueden tener una vida útil prolongada, pero con el tiempo es común que dejen
                 de funcionar tan eficientemente como cuando fueron adquiridos. Estos problemas suelen surgir debido muchos factores,
                 como la acumulación de suciedad, daños causados por un mal uso, accidentes por golpes o derrames de líquido, virus,
@@ -73,14 +92,14 @@
                 especializamos en solucionarlos.
             </p>
 
-            <p class="disclaimer">
+            <p class="landing-services__disclaimer">
                 *Los precios varian de acuerdo a su dispositivo
             </p>
-            <div class="box-list">
-                <div class="list">
+            <div class="landing-services__box-list">
+                <div class="landing-services__list left">
                     <ul>
                         <h4>
-                            Hardware(30K-500K)
+                            Hardware(30.000-500.000 COP)
                         </h4>
                         <li>Mantenimiento Fisico</li>
                         <li>Cambio de teclado</li>
@@ -92,26 +111,25 @@
                         <li>Correccon de errores de sobrecalentamiento</li>
                     </ul>
                 </div>  
-            </div>
-            <div class="list">
-                <ul>
-                    <h4>
-                        Software(50k-150K)
-                    </h4>
-                    <li>Reprogramacion</li>
-                    <li>Correccion de erorres ocasionados por virus</li>
-                    <li>Copias de seguridad(backups)</li>
-                    <li>Instalacion de programas</li>
-                    <li>Configuracion del sistema operativo</li>
-                </ul>
+
+                <div class="landing-services__list right">
+                    <ul>
+                        <h4>
+                            Software(50.000-150.000 COP)
+                        </h4>
+                        <li>Reprogramacion</li>
+                        <li>Correccion de erorres ocasionados por virus</li>
+                        <li>Copias de seguridad(backups)</li>
+                        <li>Instalacion de programas</li>
+                        <li>Configuracion del sistema operativo</li>
+                </div>
             </div>
         </div>
     </section>
-
     <section class="why-us">
         <div class="container"> 
-            <h2>Por que nosotros?</h2>
-            <p>      
+            <h2 class="why-us__title">¿Por que dejar tu portatil en <span class="hero__highlighted-text">TAKT</span> ? </h2>
+            <p class="why-us__paragraph">      
                     En el competitivo mundo de la reparación y mantenimiento de portátiles, estamos orgullosos de ofrecer un servicio
                     excepcional que se destaca por varias razones: <br><br>
 
@@ -135,52 +153,54 @@
 
     <section class="reviews">
         <div class="container">  
-            <h2>Lo que dicen nuestros clientes</h2>
-            <div class="reviewcard-1">
-                <img src="" alt="opinion1"> 
-            </div>
-            <div class="reviewcard-2">
-                <img src="" alt="opinion2"> 
-            </div>
-            <div class="reviewcard-3">
-                <img src="" alt="opinion3"> 
+            <h2 class="title__reviews">LO QUE DICEN NUESTROS CLIENTES</h2>
+            <div class="row__reviews">
+                <div class="reviews__reviewcard">
+                    <img src="/root/img/opinion_1.png" alt="opinion1"> 
+                </div>
+                <div class="reviews__reviewcard">
+                    <img src="/root/img/opinion_2.png" alt="opinion2"> 
+                </div>
+                <div class="reviews__reviewcard">
+                    <img src="/root/img/opinion_3.png" alt="opinion3"> 
+                </div>
             </div>
         </div>
     </section>
 
     <section class="call_to_action">
         <div class="container">
-            <div class="center_text">
-                <h2>DAR SOLUCION</h2>
-                <p>*Realize su consulta sin ningun costo!</p>
+            <div class="call_to_action__center-text">
+                <h2 class="call_to_action__title">DAR SOLUCION</h2>
+                <p class="call_to_action__paragraph">*Realize su consulta sin ningun costo!</p>
             </div>
-            <div class="center_button">
-                <button class="action-buttons">
+            <div class="call_to_action__buttons">
+                <button class="call_to_action__action-buttons">
                     <img src="img/icon _phone_.svg" alt="Celular">
                     Celular
                 </button>
-                <button class="action-buttons">
+                <button class="call_to_action__action-buttons">
                     <img src="img/icon _email_.svg" alt="Correo">
                     Correo
                 </button>
-                <button class="action-buttons">
+                <button class="call_to_action__action-buttons">
                     <img src="img/icon _whatsapp_.svg" alt="Whatsapp">
                     Whatsapp
-                    
                 </button>
             </div>
         </div>
     </section>
+
     <footer>
         <div class="maintext-footer">
-            <h3>TAKT</h2>
+            <h3 class="maintext-footer__title">TAKT</h2>
             <p>
                 TAKT es tu aliado confiable en el mundo de la tecnología. Nos especializamos en ofrecer servicios de reparación de
                 dispositivos electrónicos, centrándonos en computadoras, portátiles y móviles.
             </p>
         </div>
         <div class="servicios-footer">
-            <h3>Servicios Especializados</h3>
+            <h3 class="servicios-footer__title">Servicios Especializados</h3>
             <ul>
                 <li><a href="">Optimización de computadoras</a></li>
                 <li><a href="">Recuperación de archivos</a></li>
@@ -188,7 +208,7 @@
             </ul>
         </div>
         <div class="contacto-footer">
-            <h3>Contacto</h3>
+            <h3 class="contacto-footer__title">Contacto</h3>
             <ul>
                 <li><a href="">taktmantenimientos@tech.com</a></li>
                 <li><a href="">Cra 5 #7a-76 Barranquilla, Atlantico</a></li>
@@ -203,3 +223,4 @@
     </footer>
 </body>
 </html>
+<!-- TO HERE -->
