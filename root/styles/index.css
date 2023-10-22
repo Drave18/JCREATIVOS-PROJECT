@@ -189,3 +189,45 @@ nav a:hover{
 .right {
     order: 2;
 }
+
+
+
+* -----------------------------TEXTO INTERCAMBIABLE -- BOTONES */
+
+
+.landing-services__icons{
+    display: flex;
+    justify-content: center;
+
+}
+.button{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    background-color: #f1f1f1;
+    margin: 20px;
+}
+
+.button__text{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+    font-weight: 600;
+}
+.button__image{
+    width: 67px;
+    height: 60px;
+}
+
+
+
+
+
+
