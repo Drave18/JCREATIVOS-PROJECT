@@ -1,0 +1,20 @@
+.files__title, .files__price{
+    text-align: center;
+}
+.files__highlighted-text{
+    color: #00FFC2;
+}
+
+.files{
+    margin-top: 5em;
+}
+.files__price{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.files__paragraph{
+    margin-bottom: 1em;
+}
+.files__subtitle{
+    margin-bottom: 1em;
+}

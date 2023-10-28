@@ -1,71 +1,5 @@
-/* ---------------------NAVIGATION------------------------------- */
-nav {
-    height: 100%;
-}
-/* DEFINIR FONT-SIZE OJO */
-nav .menu__logo{
-    font-family: 'Outfit', sans-serif;
-    font-weight: 600;
-    font-size: 1.6em;
-    margin: 15px;
-    display: flex;
-    justify-content: flex-start;
-}
-
-nav ul {
-    display: flex;
-    align-items: center;
-    margin: 15px;
-    margin-top: 30px;
-}
-
-nav ul a {
-    font-weight: 400;
-    padding: 5px 12px;
-    text-decoration: none;
-    color: black;
-    transition-duration: 0.5s;
-}
-.menu__right-aligned {
-    display: flex;
-    margin-left: auto;
-}
-.menu__centered a{
-    margin-left: 60px ;
-}
-.menu__centered {
-    margin: auto; /* Centrar estos elementos horizontalmente. */
-}
-
-
-
-.menu__button {
-    margin-left: 20px;
-    font-size: 1.25em;/* Añade margen izquierdo a estos elementos si es necesario. */
-}
-#login {
-    background-color: transparent; /* Fondo transparente */
-    color: black; /* Texto en negro */
-    border: none; /* Sin borde */
-}
-
-#register {
-    background-color: black; /* Fondo negro */
-    color: white; /* Texto blanco */
-    border: none;
-    border-radius: 15px; /* Sin borde */
-}
-
-
-
-nav .menu__logo:hover{
-    color: black;
-}
-nav a:hover{
-    color: rgb(136, 192, 192);
-}
-
 /* ---------------------HERO------------------------------- */
+
 .hero{
     margin-top: 20px;
 }
@@ -88,6 +22,9 @@ nav a:hover{
     text-align: center;
 }
 /* ---------------------DESCRIPTION------------------------------- */
+.description{
+    width: 100%;
+}
 .description__imagen {
     width: 550px;
     max-height: 100%; /* Establece un ancho máximo del 100% del contenedor */
@@ -96,6 +33,7 @@ nav a:hover{
 }
 
 .description__items {
+    width: 100%;
     display: flex;
     align-items: flex-start;
     margin-top: 100px;
@@ -117,8 +55,14 @@ nav a:hover{
 }
 
 .cotiza {
-    width: 292px;
-    height: 70px;
+    font-family: 'Outfit', sans-serif;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 280px;
     background-color: black;
     color: white;
     font-size: 1.25em;
@@ -168,6 +112,13 @@ nav a:hover{
     font-weight: 600;
     margin-bottom: 1em;
     margin-top: 1em;
+}
+.landing-services__titlecenter{
+    text-align: center;
+}
+#list-componente{
+    display: flex;
+    justify-content: center;
 }
 .landing-services__box-list {
     display: flex;
@@ -261,8 +212,8 @@ nav a:hover{
     width: 860px;
 }
 
-
-.call_to_action{
+/* call to action especifico para el indez */
+#index{
     width: 100%;
     height: 30em;
     background-image: url("/root/img/pexels-it-services-eu-7639373.png");
@@ -276,127 +227,12 @@ nav a:hover{
     text-align: center;
 }
 
-.call_to_action__buttons{
-    display: flex;
-    justify-content: center;
-
-}
-
-.call_to_action__action-buttons{
-    width: 192px;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    font-size: 1.25em;
-    font-weight: 700;
-    border-radius: 34px;
-    border: none;
-    width: 100%;
-
-}
-.call_to_action__center-text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.call_to_action__title {
-    margin-bottom: 5px; 
-    color: #f1f1f1;
-}
-.call_to_action__paragraph{
-    color: #ffffff;
-    font-style: bold;
-}
-
-.center_button{
-    display: flex;
-    justify-content: center;
-}
-
-
-.call_to_action__action-buttons{
-    width: 192px;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    font-size: 1.25em;
-    font-weight: 700;
-    border-radius: 34px;
-    border: none;
-    margin-right: 10px;
-}
-.action-buttons img{
-    width: 29px;
-    height: 29px;
-    margin-right: 5px;
-}
-
-.action-buttons img{
-    width: 29px;
-    height: 29px;
-    margin-right: 5px;
-}
-
-/* ---------------------FOOTER TODO: ASSIGN WIDTH AND HEIGHT------------------------------- */
-footer{
-    background-color: #161616;
-    color: white;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px; /* Space between columns */
-    padding: 20px;
-    position: absolute;
-    text-align: center; /*align text to center*/
-
-}
-footer a{
-    text-decoration: none;
+#index .call_to_action__title{
     color: white;
 }
 
-
-.maintext-footer, .servicios-footer, .contacto-footer, .socialbtns {
-    text-align: left; /* Alineación del texto a la izquierda */
+#index .call_to_action__paragraph{
+    color: white;
 }
-
-.maintext-footer h3, .servicios-footer h3, .contacto-footer h3 {
-    margin-bottom: 15px; /* Agregar espacio entre títulos y párrafos */
-}
-
-.servicios-footer ul,
-.contacto-footer ul,
-.servicios-footer li,
-.contacto-footer li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-/* AÑADIR ESPACIO ENTRE CADA LINK */
-.servicios-footer a, .contacto-footer a {
-    display: block; /* Block para usar todo el ancho disponible*/
-    margin-bottom: 10px; /*Espacio entre links*/
-}
-
-
-.socialbtns {
-    display: flex; /* desplegar botones de manera horizontal*/
-}
-.socialbtns img{
-    width: 25.58px;
-    height: 25.26px;
-}
-
-.socialbtns a {
-    margin-right: 10px; /* espacio entre botones*/
-}
-
 
 

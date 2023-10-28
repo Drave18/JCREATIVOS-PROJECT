@@ -1,0 +1,21 @@
+.graphics_cards__title, .graphics_cards__price{
+    text-align: center;
+}
+.graphics_cards__highlighted-text{
+    color: #00FFC2;
+}
+
+
+.graphics_cards{
+    margin-top: 5em;
+}
+.graphics_cards__price{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.graphics_cards__paragraph{
+    margin-bottom: 1em;
+}
+.graphics_cards__subtitle{
+    margin-bottom: 1em;
+}

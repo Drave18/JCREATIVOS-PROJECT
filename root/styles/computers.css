@@ -1,0 +1,36 @@
+.overclock__highlighted-text, .optimization__highlighted-text{
+    color: #00FFC2;
+}
+
+.optimization__title, .overclock__title, .optimization__price, .overclock__price{
+    text-align: center;
+}
+
+.computers{
+    margin-top: 5em;
+}
+.optimization__price{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.optimization__paragraph{
+    margin-bottom: 1em;
+}
+.optimization__subtitle{
+    margin-bottom: 1em;
+}
+
+.overclock__price{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.overclock__paragraph{
+    margin-bottom: 1em;
+}
+.overclock__subtitle{
+    margin-bottom: 1em;
+}
+
+.computers__overclock{
+    margin-top: 2em;
+}

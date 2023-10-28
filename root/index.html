@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css"> <!-- CSS general -->
-    <link rel="stylesheet" href="styles/index.css">     <!-- css del index -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="/root/scripts/index.js"></script>
     <title>Takt</title>
 </head>
 <body>
@@ -17,7 +17,7 @@
                         <a href="#" class="menu__item">Acerca de</a>
                         <a href="/root/pages/Services.html" class="menu__item">Servicios</a>
                         <a href="#" class="menu__item">Contacto</a>
-                        <a href="#" class="menu__item">Reseñas</a>
+                        <a href="#reviews" class="menu__item">Reseñas</a>
                     </div>
                     <div class="menu__right-aligned">
                         <button class="menu__button" id="login">
@@ -41,7 +41,7 @@
                 <div class="description_image-column">
                     <img src="img/component-repairing.jpg" class="description__imagen">
                     <div class="button-center">
-                        <button class="cotiza">Cotiza tu mantenimiento</button>
+                        <a class="cotiza">Cotiza tu mantenimiento</a>
                     </div>
                 </div>
                 <div class="description__text-column">
@@ -64,7 +64,7 @@
             <div class="landing-services__icons">
                 <button class="button" type="button">
                     <div class="button__content-box">
-                                            <h3 class="button__text">Portatil</h3>
+                    <h3 class="button__text">Portatil</h3>
                     <img src="/root/img/icon _Laptop_.svg" alt="Imagen 1" class="button__image">
                     </div>
                 </button>
@@ -83,6 +83,7 @@
                     </div>
                 </button>
             </div>
+            <!-- PARRAFO POR DEFECTO -->
             <p class="landing-services__paragraph">
                 Entendemos que los computadores portátiles pueden tener una vida útil prolongada, pero con el tiempo es común que dejen
                 de funcionar tan eficientemente como cuando fueron adquiridos. Estos problemas suelen surgir debido muchos factores,
@@ -95,7 +96,7 @@
             <p class="landing-services__disclaimer">
                 *Los precios varian de acuerdo a su dispositivo
             </p>
-            <div class="landing-services__box-list">
+            <div class="landing-services__box-list" id="list-portatil">
                 <div class="landing-services__list left">
                     <ul>
                         <h4>
@@ -125,24 +126,25 @@
                 </div>
             </div>
         </div>
+        <!-- PARRAFO POR DEFECTO -->
     </section>
     <section class="why-us">
         <div class="container"> 
-            <h2 class="why-us__title">¿Por que dejar tu portatil en <span class="hero__highlighted-text">TAKT</span> ? </h2>
+            <h2 class="why-us__title">¿Por que dejar tu equipo en <span class="hero__highlighted-text">TAKT</span> ? </h2>
             <p class="why-us__paragraph">      
-                    En el competitivo mundo de la reparación y mantenimiento de portátiles, estamos orgullosos de ofrecer un servicio
+                    En el competitivo mundo de la reparación y mantenimiento de equipos tecnologicos, estamos orgullosos de ofrecer un servicio
                     excepcional que se destaca por varias razones: <br><br>
 
                 <b>1.Experiencia y Conocimiento:</b> Con años de experiencia en la industria, nuestros técnicos altamente capacitados tienen un
-                profundo conocimiento de las complejidades de los portátiles y pueden diagnosticar y solucionar una amplia gama de
+                profundo conocimiento de las complejidades de los dispositivos tecnologicos y pueden diagnosticar y solucionar una amplia gama de
                 problemas, desde fallas de hardware hasta problemas de software.<br><br>
 
-                <b>2.Servicio Personalizado:</b> Tratamos cada portátil con el mismo cuidado y atención que si fuera propio. Nos esforzamos por
+                <b>2.Servicio Personalizado:</b> Tratamos cada dispositivo con el mismo cuidado y atención que si fuera propio. Nos esforzamos por
                 brindar un servicio personalizado y adaptado a las necesidades específicas de cada cliente.<br><br>
 
-                <b>3.Rápido y Eficaz:</b> Sabemos lo importante que es su portátil en su vida diaria. Trabajamos de manera eficiente para
+                <b>3.Rápido y Eficaz:</b> Sabemos lo importante que es su dispositivo en su vida diaria. Trabajamos de manera eficiente para
                 minimizar el tiempo de inactividad de su dispositivo, asegurándonos de que vuelva a funcionar lo más rápido posible
-                garantizando un tiempo de entreg a de máximo 24hrs.<br><br>
+                garantizando un tiempo de entrega a de máximo 24hrs.<br><br>
 
                 <b>4.Atención al Cliente: </b>Nuestro compromiso con un servicio al cliente excepcional significa que estamos disponibles para
                 responder a sus preguntas, brindar asesoramiento y asegurarnos de que esté completamente satisfecho con nuestros
@@ -151,7 +153,7 @@
         </div>
     </section>
 
-    <section class="reviews">
+    <section class="reviews" id="reviews">
         <div class="container">  
             <h2 class="title__reviews">LO QUE DICEN NUESTROS CLIENTES</h2>
             <div class="row__reviews">
@@ -168,25 +170,25 @@
         </div>
     </section>
 
-    <section class="call_to_action">
+    <section class="call_to_action" id="index">
         <div class="container">
             <div class="call_to_action__center-text">
                 <h2 class="call_to_action__title">DAR SOLUCION</h2>
                 <p class="call_to_action__paragraph">*Realize su consulta sin ningun costo!</p>
             </div>
             <div class="call_to_action__buttons">
-                <button class="call_to_action__action-buttons">
+                <a class="call_to_action__action-buttons">
                     <img src="img/icon _phone_.svg" alt="Celular">
                     Celular
-                </button>
-                <button class="call_to_action__action-buttons">
+                </a>
+                <a class="call_to_action__action-buttons">
                     <img src="img/icon _email_.svg" alt="Correo">
                     Correo
-                </button>
-                <button class="call_to_action__action-buttons">
+                </a>
+                <a class="call_to_action__action-buttons">
                     <img src="img/icon _whatsapp_.svg" alt="Whatsapp">
                     Whatsapp
-                </button>
+                </a>
             </div>
         </div>
     </section>

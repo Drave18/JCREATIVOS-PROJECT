@@ -64,9 +64,16 @@ nav a:hover{
     color: rgb(136, 192, 192);
 }
 
+body a{
+    text-decoration: none;
+    font-size: 1em;
+}
 .heading{
-    margin-top: 100px;
+    margin-top: 5em;
     line-height: 1em;
+}
+.heading__title{
+    margin-bottom: 1em;
 }
 
 .heading__paragraph{
@@ -74,6 +81,15 @@ nav a:hover{
     color: #4A4A4A;
     font-size: 1.70em;
 }
+.esenciales__title{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.servicios-especializados__title{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
 .heading__title, .heading__paragraph, .esenciales__title, .servicios-especializados__title{
     text-align: center;
 }
@@ -133,10 +149,14 @@ nav a:hover{
 }
 
 .recuadro__button--more:hover {
-    background-color: #009966;
+    background-color: rgb(102, 102, 102, 0.5);
+    color: black;
     transition:0.5s;
 }
 
+.servicios-especializados{
+    margin-bottom: 100px;
+}
 
 
 
@@ -209,8 +229,10 @@ footer a{
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
     .recuadro {
         flex-basis: calc(50% - 20px); /* Para mostrar dos recuadros por fila en pantallas más pequeñas */
     }
+
 }
+

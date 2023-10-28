@@ -1,0 +1,63 @@
+
+/* DEFINIR FONT-SIZE OJO */
+nav .menu__logo{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 1.6em;
+    margin: 15px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    margin-top: 30px;
+}
+
+nav ul a {
+    font-weight: 400;
+    padding: 5px 12px;
+    text-decoration: none;
+    color: black;
+    transition-duration: 0.5s;
+}
+.menu__right-aligned {
+    display: flex;
+    margin-left: auto;
+}
+.menu__centered a{
+    margin-left: 60px ;
+}
+.menu__centered {
+    margin: auto; /* Centrar estos elementos horizontalmente. */
+}
+
+
+
+.menu__button {
+    margin-left: 20px;
+    font-size: 1.25em;/* Añade margen izquierdo a estos elementos si es necesario. */
+}
+#login {
+    background-color: transparent; /* Fondo transparente */
+    color: black; /* Texto en negro */
+    border: none; /* Sin borde */
+}
+
+#register {
+    background-color: black; /* Fondo negro */
+    color: white; /* Texto blanco */
+    border: none;
+    border-radius: 15px; /* Sin borde */
+}
+
+
+
+nav .menu__logo:hover{
+    color: black;
+}
+nav a:hover{
+    color: rgb(136, 192, 192);
+}

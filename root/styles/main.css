@@ -2,15 +2,29 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800&display=swap');
 
-* {
+
+@import "./index.css";
+@import "./nav.css";
+@import "./footer.css";
+@import "./call_to_action.css";
+@import "./computers.css";
+@import "./services.css";
+@import "./register.css";
+@import "./files.css";
+@import "./graphics_cards.css";
+
+*{
+    padding: 0px;
+    margin: 0px;
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
-
-body{
-    margin:0;
+.container{
+    max-width: 1400px;
+    margin: auto;
 }
+
 
 h1, h2,h3, h4{
     font-family: 'Outfit', sans-serif;
@@ -20,7 +34,7 @@ h1{font-size: 3.5em;}
 h2{font-size: 2.7em}
 h3{font-size: 1.7em;}
 h4{font-size: 1.7em;}
-p, a{font-size: 1.25em;}
+p{font-size: 1.25em;}
 
 
 button{
