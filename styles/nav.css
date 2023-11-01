@@ -21,12 +21,14 @@ nav ul a {
     padding: 5px 12px;
     text-decoration: none;
     color: black;
-    transition-duration: 0.5s;
 }
 .menu__right-aligned {
     display: flex;
     margin-left: auto;
 }
+
+
+
 .menu__centered a{
     margin-left: 60px ;
 }
@@ -43,7 +45,8 @@ nav ul a {
 #login {
     background-color: transparent; /* Fondo transparente */
     color: black; /* Texto en negro */
-    border: none; /* Sin borde */
+    border: none;
+    border-radius: 15px; /* Sin borde */
 }
 
 #register {
@@ -51,6 +54,15 @@ nav ul a {
     color: white; /* Texto blanco */
     border: none;
     border-radius: 15px; /* Sin borde */
+}
+
+#login:hover{
+    color: rgb(124, 124, 124);
+    transition-duration: 0.7s;
+}
+#register:hover{
+    background-color: rgb(124, 124, 124);
+    transition-duration: 0.5s;
 }
 
 
