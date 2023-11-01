@@ -1,0 +1,238 @@
+/* ---------------------HERO------------------------------- */
+
+.hero{
+    margin-top: 20px;
+}
+.hero__highlighted-text{
+    color: #00FFC2;
+}
+.hero{
+    background-image: url("/img/background-header.png"); /*Agrego imagen de fondo*/
+    background-size: cover; /*defino que su tamaño es el del contenedor*/
+    background-repeat: no-repeat;/*hago que no se repita el fondo*/
+    background-position: center center; 
+    height: 90vh;
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+/* ---------------------DESCRIPTION------------------------------- */
+.description{
+    width: 100%;
+}
+.description__imagen {
+    width: 550px;
+    max-height: 100%; /* Establece un ancho máximo del 100% del contenedor */
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.description__items {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 100px;
+}
+
+.description_image-column{
+    max-width: 50%;
+    max-height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px; /* Espacio entre la imagen y el botón */
+}
+
+.cotiza {
+    font-family: 'Outfit', sans-serif;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 280px;
+    background-color: black;
+    color: white;
+    font-size: 1.25em;
+    font-weight: 600;
+    border-radius: 50.61px;
+    border: none;
+}
+
+.description__text-column{
+    width: 50%;
+    height: 25%;
+    flex-direction: column;
+    flex: 1; /*Ocupa el espacio disponible en altura es como un multplicador */
+}
+
+
+.description__title{
+    margin-top: -10px;
+    margin-bottom: 1em;
+    font-weight: 400;
+}
+.description__highlighted-text{
+    font-weight: 700;
+}
+.description__text{
+    margin-top: -20px
+}
+.landing-services{
+    width: 100%;
+}
+.landing-services__title{
+    font-weight: 800;
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: 0.5em;
+    margin-top: 3em;
+}
+.landing-services__highlighted-text{
+    color: #00FFC2;
+}
+.landing-services__paragraph{
+    margin-top: 3em;
+}
+.landing-services__disclaimer{
+    text-align: center;
+    font-size: 1em;
+    font-weight: 600;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+.landing-services__titlecenter{
+    text-align: center;
+}
+#list-componente{
+    display: flex;
+    justify-content: center;
+}
+.landing-services__box-list {
+    display: flex;
+
+}
+.landing-services__box-list li{
+    font-size: 1.15em
+}
+
+.landing-services__list {
+    width: 50%;
+    /* Agrega cualquier otro estilo que desees */
+}
+
+.left {
+    order: 1;
+}
+
+.right {
+    order: 2;
+}
+
+
+
+/* -----------------------------TEXTO INTERCAMBIABLE -- BOTONES  */
+
+
+.landing-services__icons{
+    display: flex;
+    justify-content: center;
+
+}
+.button{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    background-color: #f1f1f1;
+    margin: 20px;
+}
+
+.button__text{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+    font-weight: 600;
+}
+.button__image{
+    width: 67px;
+    height: 60px;
+}
+
+/* -------------------------------------------POR QUE NOSOTROS?----------------  */
+
+.why-us__title{
+    text-align: center;
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
+/* -----------------------------------------------------REVIEWS----------------------------------------------------- */
+.reviews{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10em;
+}
+.title__reviews{
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+.reviews__reviewcard{
+    margin-right: 10px;
+}
+.row__reviews{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title__reviews{
+    text-align: center;
+}
+
+.reviews__reviewcard img{
+    width: 860px;
+}
+
+/* call to action especifico para el indez */
+#index{
+    width: 100%;
+    height: 30em;
+    background-image: url("/img/pexels-it-services-eu-7639373.png");
+    background-size: cover; /*defino que su tamaño es el del contenedor*/
+    background-repeat: no-repeat;
+    background-position: center center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    text-align: center;
+}
+
+#index .call_to_action__title{
+    color: white;
+}
+
+#index .call_to_action__paragraph{
+    color: white;
+}
+
+

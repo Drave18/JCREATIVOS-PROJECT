@@ -58,7 +58,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(209, 209, 209);
     color: rgb(0, 0, 0);
     font-size: 1.25em;
     font-weight: 700;
@@ -72,3 +72,8 @@
     margin-right: 7px;
 }
 
+.call_to_action__buttons a:hover {
+    background-color: rgb(185, 185, 185); 
+    transition-duration: 0.5s;
+
+}

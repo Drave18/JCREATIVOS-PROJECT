@@ -15,6 +15,12 @@ footer a{
     color: white;
     font-size: 1.25em;
 }
+footer a:hover{
+    color: #727272;
+    transition-duration: 0.5s;
+}
+
+
 
 
 .maintext-footer, .servicios-footer, .contacto-footer, .socialbtns {

@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css"> <!-- CSS general -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <script src="/root/scripts/index.js"></script>
     <title>Takt</title>
 </head>
 <body>
@@ -15,7 +14,7 @@
                     <a href="index.html" class="menu__logo">TAKT</a>
                     <div class="menu__centered">
                         <a href="#" class="menu__item">Acerca de</a>
-                        <a href="/root/pages/Services.html" class="menu__item">Servicios</a>
+                        <a href="/pages/Services.html" class="menu__item">Servicios</a>
                         <a href="#" class="menu__item">Contacto</a>
                         <a href="#reviews" class="menu__item">Reseñas</a>
                     </div>
@@ -47,7 +46,7 @@
                 <div class="description__text-column">
                     <h2 class="description__title">EL <span class="description__highlighted-text">SERVICIO</span> DE MANTENIMIENTO <br> QUE <span class="description__highlighted-text">NECESITAS</span></h2>
                     <p class="description__text">
-                        Somos expertos en la reparación de dispositivos electrónicos, con un enfoque especializado en computadoras,
+                        TAKT es tu aliado confiable en el mundo de la tecnología. Somos expertos en la reparación de dispositivos electrónicos, con un enfoque especializado en computadoras,
                         portátiles y móviles. Nuestro equipo está certificado y altamente capacitado para brindarte soluciones tecnológicas
                         de primera clase.
                         Entendemos que la tecnología puede ser un enigma, pero no te preocupes, ¡estamos aquí para descifrarlo contigo!
@@ -62,70 +61,71 @@
         <div class="container">
             <h2 class="landing-services__title">¿QUE DESEAS <br> <span class="landing-services__highlighted-text">REPARAR</span>?</h2>
             <div class="landing-services__icons">
-                <button class="button" type="button">
+                <button class="button" type="button" id="portatil-button">
                     <div class="button__content-box">
                     <h3 class="button__text">Portatil</h3>
-                    <img src="/root/img/icon _Laptop_.svg" alt="Imagen 1" class="button__image">
+                    <img src="/img/icon _Laptop_.svg" alt="Imagen 1" class="button__image">
                     </div>
                 </button>
 
-                <button class="button" type="button">
+                <button class="button" type="button" id="pc-button">
                     <div class="button__content-box">
                         <h3 class="button__text">PC</h3>
-                        <img src="/root/img/icon_pc.svg" alt="Imagen 2" class="button__image">
+                        <img src="/img/icon_pc.svg" alt="Imagen 2" class="button__image">
                     </div>
                 </button>
                 
-                <button class="button" type="button">
+                <button class="button" type="button" id="componente-button">
                     <div class="button__content-box">
                         <h3 class="button__text">Componente</h3>
-                        <img src="/root/img/icon _circuit board_.svg" alt="Imagen 3" class="button__image">
+                        <img src="/img/icon _circuit board_.svg" alt="Imagen 3" class="button__image">
                     </div>
                 </button>
             </div>
             <!-- PARRAFO POR DEFECTO -->
-            <p class="landing-services__paragraph">
-                Entendemos que los computadores portátiles pueden tener una vida útil prolongada, pero con el tiempo es común que dejen
-                de funcionar tan eficientemente como cuando fueron adquiridos. Estos problemas suelen surgir debido muchos factores,
-                como la acumulación de suciedad, daños causados por un mal uso, accidentes por golpes o derrames de líquido, virus,
-                falta de memoria RAM o almacenamiento, sobrecalentamiento, problemas en la pantalla debido a cortocircuitos o fallas en
-                la batería. Los daños en los computadores pueden ser tanto externos como internos, y en nuestro taller nos
-                especializamos en solucionarlos.
-            </p>
-
-            <p class="landing-services__disclaimer">
-                *Los precios varian de acuerdo a su dispositivo
-            </p>
-            <div class="landing-services__box-list" id="list-portatil">
-                <div class="landing-services__list left">
-                    <ul>
-                        <h4>
-                            Hardware(30.000-500.000 COP)
-                        </h4>
-                        <li>Mantenimiento Fisico</li>
-                        <li>Cambio de teclado</li>
-                        <li>Reprogramacion de BIOS</li>
-                        <li>Reemplazo y reparacion de carcasa</li>
-                        <li>Cambio de Trackpad</li>
-                        <li>Reparacion  o cambio de Bisagras</li>
-                        <li>Reemplazo de ventiladores y disipadores de calor</li>
-                        <li>Correccon de errores de sobrecalentamiento</li>
-                    </ul>
-                </div>  
-
-                <div class="landing-services__list right">
-                    <ul>
-                        <h4>
-                            Software(50.000-150.000 COP)
-                        </h4>
-                        <li>Reprogramacion</li>
-                        <li>Correccion de erorres ocasionados por virus</li>
-                        <li>Copias de seguridad(backups)</li>
-                        <li>Instalacion de programas</li>
-                        <li>Configuracion del sistema operativo</li>
+            <div class="change_text">
+                <p class="landing-services__paragraph">
+                    Entendemos que los computadores portátiles pueden tener una vida útil prolongada, pero con el tiempo es común que dejen
+                    de funcionar tan eficientemente como cuando fueron adquiridos. Estos problemas suelen surgir debido muchos factores,
+                    como la acumulación de suciedad, daños causados por un mal uso, accidentes por golpes o derrames de líquido, virus,
+                    falta de memoria RAM o almacenamiento, sobrecalentamiento, problemas en la pantalla debido a cortocircuitos o fallas en
+                    la batería. Los daños en los computadores pueden ser tanto externos como internos, y en nuestro taller nos
+                    especializamos en solucionarlos.
+                </p>
+    
+                <p class="landing-services__disclaimer">
+                    *Los precios varian de acuerdo a su dispositivo
+                </p>
+                <div class="landing-services__box-list" id="list-portatil">
+                    <div class="landing-services__list left">
+                        <ul>
+                            <h4>
+                                Hardware(30.000-500.000 COP)
+                            </h4>
+                            <li>Mantenimiento Fisico</li>
+                            <li>Cambio de teclado</li>
+                            <li>Reprogramacion de BIOS</li>
+                            <li>Reemplazo y reparacion de carcasa</li>
+                            <li>Cambio de Trackpad</li>
+                            <li>Reparacion  o cambio de Bisagras</li>
+                            <li>Reemplazo de ventiladores y disipadores de calor</li>
+                            <li>Correccon de errores de sobrecalentamiento</li>
+                        </ul>
+                    </div>  
+    
+                    <div class="landing-services__list right">
+                        <ul>
+                            <h4>
+                                Software(50.000-150.000 COP)
+                            </h4>
+                            <li>Reprogramacion</li>
+                            <li>Correccion de erorres ocasionados por virus</li>
+                            <li>Copias de seguridad(backups)</li>
+                            <li>Instalacion de programas</li>
+                            <li>Configuracion del sistema operativo</li>
+                    </div>
                 </div>
             </div>
-        </div>
         <!-- PARRAFO POR DEFECTO -->
     </section>
     <section class="why-us">
@@ -158,13 +158,13 @@
             <h2 class="title__reviews">LO QUE DICEN NUESTROS CLIENTES</h2>
             <div class="row__reviews">
                 <div class="reviews__reviewcard">
-                    <img src="/root/img/opinion_1.png" alt="opinion1"> 
+                    <img src="/img/opinion_1.png" alt="opinion1"> 
                 </div>
                 <div class="reviews__reviewcard">
-                    <img src="/root/img/opinion_2.png" alt="opinion2"> 
+                    <img src="/img/opinion_2.png" alt="opinion2"> 
                 </div>
                 <div class="reviews__reviewcard">
-                    <img src="/root/img/opinion_3.png" alt="opinion3"> 
+                    <img src="/img/opinion_3.png" alt="opinion3"> 
                 </div>
             </div>
         </div>
@@ -223,6 +223,7 @@
                 <a href=""><img src="img/icon_location.svg" alt="Ubicacion"></a>
         </div>
     </footer>
+    <script src="scripts/index.js"></script>
 </body>
 </html>
 <!-- TO HERE -->
