@@ -69,6 +69,12 @@
     font-weight: 600;
     border-radius: 50.61px;
     border: none;
+    
+}
+
+.cotiza:hover{
+    background-color: rgb(124, 124, 124);
+    transition-duration: 0.5s;
 }
 
 .description__text-column{
