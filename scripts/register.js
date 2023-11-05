@@ -1,26 +1,20 @@
-
-// Mostrar contraseña oculta
-const showHiddenPass = (loginPass, loginEye) =>{
-    const input = document.getElementById(loginPass),
-          iconEye = document.getElementById(loginEye)
- 
-    iconEye.addEventListener('click', () =>{
-    //    cambiar contraseña a texto
-       if(input.type === 'password'){
-          input.type = 'text'
- 
-          // cambiar icono
-          iconEye.classList.add('ri-eye-line')
-          iconEye.classList.remove('ri-eye-off-line')
-       } else{
-          // cambiar a contraseña
-          input.type = 'password'
- 
-          // cambiar icono
-          iconEye.classList.remove('ri-eye-line')
-          iconEye.classList.add('ri-eye-off-line')
-       }
-    })
- }
- 
- showHiddenPass('login-pass','login-eye')
+// Mostrar contraseña oculta en el formulario de registro
+const showHiddenPass = (registerPass, registerEye) => {
+    const input = document.getElementById(registerPass);
+    const iconEye = document.getElementById(registerEye);
+  
+    iconEye.addEventListener('click', () => {
+      if (input.type === 'password') {
+        input.type = 'text';
+        iconEye.classList.add('ri-eye-line');
+        iconEye.classList.remove('ri-eye-off-line');
+      } else {
+        input.type = 'password';
+        iconEye.classList.remove('ri-eye-line');
+        iconEye.classList.add('ri-eye-off-line');
+      }
+    });
+  }
+  
+  showHiddenPass('register-pass', 'register-eye');
+  

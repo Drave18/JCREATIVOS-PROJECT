@@ -1,12 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/main.css">
-    <title>Register</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+   <link rel="stylesheet" href="../styles/register.css">
+   <title>Registro</title>
 </head>
 <body>
-    
+   <div class="register">
+      <form action="" class="register__form">
+         <h1 class="register__title">Registro de Usuario</h1>
+
+         <div class="register__content">
+            <div class="register__box">
+               <i class="ri-user-3-line register__icon"></i>
+               <div class="register__box-input">
+                  <input type="text" required class="register__input" id="register-firstname" placeholder=" ">
+                  <label for="register-firstname" class="register__label">Nombres</label>
+               </div>
+            </div>
+
+            <div class="register__box">
+               <i class="ri-user-3-line register__icon"></i>
+               <div class="register__box-input">
+                  <input type="text" required class="register__input" id="register-lastname" placeholder=" ">
+                  <label for="register-lastname" class="register__label">Apellidos</label>
+               </div>
+            </div>
+
+            <div class="register__box">
+               <i class="ri-mail-line register__icon"></i>
+               <div class="register__box-input">
+                  <input type="email" required class="register__input" id="register-email" placeholder=" ">
+                  <label for="register-email" class="register__label">Correo Electrónico</label>
+               </div>
+            </div>
+
+            <div class="register__box">
+               <i class="ri-lock-2-line register__icon"></i>
+               <div class="register__box-input">
+                  <input type="password" required class="register__input" id="register-pass" placeholder=" ">
+                  <label for="register-pass" class="register__label">Contraseña</label>
+                  <i class="ri-eye-off-line register__eye" id="register-eye"></i>
+               </div>
+            </div>
+
+            <div class="register__box">
+               <i class="ri-male-female-line register__icon"></i>
+               <div class="register__box-input">
+                  <select required class="register__input" id="register-gender">
+                     <option value="" disabled selected>Selecciona el género</option>
+                     <option value="masculino">Masculino</option>
+                     <option value="femenino">Femenino</option>
+                     <option value="otro">Otro</option>
+                  </select>
+               </div>
+            </div>
+         </div>
+
+         <button type="submit" class="register__button">Registrar</button>
+
+         <p class="register__login">
+            ¿Ya tienes una cuenta? <a href="#">Iniciar Sesión</a>
+         </p>
+      </form>
+   </div>
+
+   <script src="../scripts/register.js"></script>
 </body>
 </html>

@@ -10,6 +10,7 @@ body {
   color: rgb(255, 255, 255);
   background-image:  linear-gradient(black, rgb(151, 151, 151)),
 url(../img/login-background.jpg);
+background-attachment: fixed;/* This property is used in CSS to set a background image as fixed or scroll */
 background-blend-mode:hard-light;
   background-size: cover; /*defino que su tamaño es el del contenedor*/
   background-repeat: no-repeat;
