@@ -10,6 +10,7 @@
 @import "./computers.css";
 @import "./services.css";
 @import "./login.css";
+@import "./register.css";
 @import "./files.css";
 @import "./graphics_cards.css";
 
@@ -37,12 +38,3 @@ h4{font-size: 1.7em;}
 p{font-size: 1.25em;}
 
 
-button{
-    font-family: 'Outfit', sans-serif;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 4px 2px;
-    cursor: pointer;
-}

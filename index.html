@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="./styles/main.css"> <!-- CSS general -->
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <title>Takt</title>
+    <!-- IMPORTACION DE ICONO DE FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/19f7eaa3ea.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -18,12 +20,12 @@
                         <a href="#reviews" class="menu__item">Reseñas</a>
                     </div>
                     <div class="menu__right-aligned">
-                        <button class="menu__button" id="login">
+                        <a class="menu__button" id="login">
                             Iniciar Sesion
-                        </button>
-                        <button class="menu__button" id="register">
+                        </a>
+                        <a class="menu__button" id="register">
                             Registrarte
-                        </button>
+                        </a>
                     </div>
                 </ul>
             </nav>
@@ -153,20 +155,120 @@
     </section>
 
     <section class="reviews" id="reviews">
-        <div class="container">  
-            <h2 class="title__reviews">LO QUE DICEN NUESTROS CLIENTES</h2>
-            <div class="row__reviews">
-                <div class="reviews__reviewcard">
-                    <img src="./img/opinion_1.png" alt="opinion1"> 
+        <div class="reviews__title">
+            <h3>Nuestros clientes nos recomiendan:</h3>
+        </div>
+        
+        <div class="reviews__box-container">
+            <div class="reviews__testimonial-box">
+                <div class="reviews__box-top">
+                    <div class="reviews__profile">
+                        <div class="reviews__profile-img">
+                            <img src="/img/opinion1.jpg" alt="">
+                        </div>
+                        <div class="reviews__name-user">
+                            <b>Camila sanchez</b>
+                            <span>Diseñadora Grafica</span>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
                 </div>
-                <div class="reviews__reviewcard">
-                    <img src="./img/opinion_2.png" alt="opinion2"> 
-                </div>
-                <div class="reviews__reviewcard">
-                    <img src="./img/opinion_3.png" alt="opinion3"> 
+        
+                <div class="reviews__comments">
+                    Excelente servicio, estaba fallando mucho el procesador pero solo fue contactarlos
+                    y dejaron mi equipo como nuevo, listo
+                    para trabajar.
                 </div>
             </div>
+
+            <div class="reviews__testimonial-box">
+                <div class="reviews__box-top">
+                    <div class="reviews__profile">
+                        <div class="reviews__profile-img">
+                            <img src="/img/opinion2.jpg" alt="">
+                        </div>
+                        <div class="reviews__name-user">
+                            <b>Javier Lopez</b>
+                            <span>Ingeniero de sistemas</span>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+        
+                <div class="reviews__comments">
+                    Necesitaba recuperar una informacion importante de mi empresa en el portatil, daba todo perdido pero ellos lo
+                    solucionaron como si nada!
+                </div>
+            </div>
+
+            <div class="reviews__testimonial-box">
+                <div class="reviews__box-top">
+                    <div class="reviews__profile">
+                        <div class="reviews__profile-img">
+                            <img src="/img/opinion3.jpeg" alt="">
+                        </div>
+                        <div class="reviews__name-user">
+                            <b>Joseph Saenz</b>
+                            <span>Animador 3D</span>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+        
+                <div class="reviews__comments">
+                    Tenia problemas con la pantalla del pc, pero los contacte a ellos y me dijeron exactamente cual era el problema y lo
+                    solucionaron en un santiamén!
+                </div>
+            </div>
+
+            <div class="reviews__testimonial-box">
+                <div class="reviews__box-top">
+                    <div class="reviews__profile">
+                        <div class="reviews__profile-img">
+                            <img src="/img/opinion4.jpeg" alt="">
+                        </div>
+                        <div class="reviews__name-user">
+                            <b>Justin Turner</b>
+                            <span>Productor musical</span>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+        
+                <div class="reviews__comments">
+                    Excelente servicio, estaba fallando mucho el procesador pero solo fue contactarlos
+                    y dejaron mi equipo como nuevo, listo
+                    para trabajar.
+                </div>
+            </div>
+
+            
         </div>
+    
     </section>
 
     <section class="call_to_action" id="index">
@@ -223,6 +325,7 @@
         </div>
     </footer>
     <script src="./scripts/index.js"></script>
+    <script src="./scripts/nav.js"></script>
 </body>
 </html>
 <!-- TO HERE -->

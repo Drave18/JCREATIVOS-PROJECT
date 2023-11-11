@@ -1,3 +1,5 @@
+// Este código agrega un "event listener" al documento (la página web) que escucha el evento "DOMContentLoaded". 
+// Este evento se dispara cuando todo el contenido HTML de la página ha sido completamente cargado 
 document.addEventListener("DOMContentLoaded", function() {
     // Selecciona los botones y la sección "change_text" por sus IDs
     const portatilButton = document.getElementById("portatil-button");
@@ -5,7 +7,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const componenteButton = document.getElementById("componente-button");
     const changeText = document.querySelector(".change_text");
 
-    // Agrega un controlador de eventos al botón "Portátil"
+    // Agrega un controlador de eventos al botón "Portátil", de esta manera al precionarlo se ejecuta
+    // un cambio en el html que tiene la clase change_text para reemplaszarlo por el que se describe a continuacion
     portatilButton.addEventListener("click", () => {
         // Cambia el contenido de la sección "change_text" según el botón "Portátil"
         changeText.innerHTML = `
@@ -52,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
         `;
     });
 
-    // Agrega un controlador de eventos al botón "PC"
+    // Agrega un controlador de eventos al botón "PC" y pasa lo mismo que lo anterior
     pcButton.addEventListener("click", () => {
         // Cambia el contenido de la sección "change_text" según el botón "PC"
         changeText.innerHTML = `
