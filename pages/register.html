@@ -4,10 +4,27 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-   <link rel="stylesheet" href="../styles/register.css">
+   <link rel="stylesheet" href="../styles/main.css">
    <title>Registro</title>
 </head>
-<body>
+<body class="background-register">
+   <header>
+      <a href="/index.html" class="logo">TAKT</a>
+      <ul class="navbar">
+         <li><a href="/index.html" class="active">Inicio</a></li>
+         <li><a href="./pages/Services.html">Servicios</a></li>
+         <li><a href="#contacto">Contacto</a></li>
+         <li><a href="/index.html#reviews">Reseñas</a></li>
+      </ul>
+      <div class="main">
+         <a href="../pages/Login.html" class="user" id="login"><i class="ri-user-fill"></i>Iniciar Sesion</a>
+         <a href="../pages/register.html" id="register">Registrarse</a>
+         <!-- uso del menu de remix icons -->
+         <div class="bx bx-menu" id="menu-icon"></div>
+      </div>
+      <script src="/scripts/nav.js"></script>
+   </header>
+
    <div class="register">
       <form action="" class="register__form">
          <h1 class="register__title">Registro de Usuario</h1>
@@ -47,7 +64,7 @@
             </div>
 
             <div class="register__box">
-               <i class="ri-male-female-line register__icon"></i>
+               <i class="ri-genderless-line register__icon"></i>
                <div class="register__box-input">
                   <select required class="register__input" id="register-gender">
                      <option value="" disabled selected>Selecciona el género</option>

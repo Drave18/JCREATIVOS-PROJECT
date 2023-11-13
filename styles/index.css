@@ -1,8 +1,5 @@
 /* ---------------------HERO------------------------------- */
 
-.hero{
-    margin-top: 20px;
-}
 .hero__highlighted-text{
     color: #00FFC2;
 }
@@ -11,7 +8,7 @@
     background-size: cover; /*defino que su tamaño es el del contenedor*/
     background-repeat: no-repeat;/*hago que no se repita el fondo*/
     background-position: center center; 
-    height: 90vh;
+    height: 100vh;
     color: white;
     font-size: 25px;
     font-weight: 700;

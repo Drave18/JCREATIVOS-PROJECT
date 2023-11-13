@@ -8,24 +8,20 @@
 </head>
 <body>
     <header>
-        <nav class="menu">
-            <ul class="menu__list"> 
-                <a href="../index.html" class="menu__logo">TAKT</a>
-                <div class="menu__centered">
-                    <a href="../pages/Services.html" class="menu__item">Servicios</a>
-                    <a href="#" class="menu__item">Contacto</a>
-                    <a href="#" class="menu__item">Reseñas</a>
-                </div>
-                <div class="menu__right-aligned">
-                    <a class="menu__button" id="login">
-                        Iniciar Sesion
-                    </a>
-                    <a class="menu__button" id="register">
-                        Registrarte
-                    </a>
-                </div>
-            </ul>
-        </nav>
+        <a href="/index.html" class="logo">TAKT</a>
+        <ul class="navbar">
+            <li><a href="/index.html" class="active">Inicio</a></li>
+            <li><a href="./pages/Services.html">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="/index.html#reviews">Reseñas</a></li>
+        </ul>
+        <div class="main">
+            <a href="../pages/Login.html" class="user" id="login"><i class="ri-user-fill"></i>Iniciar Sesion</a>
+            <a href="../pages/register.html" id="register">Registrarse</a>
+            <!-- uso del menu de remix icons -->
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+        <script src="/scripts/nav.js"></script>
     </header>
     <section class="heading">
         <h1 class="heading__title">Nuestros <span class="heading__highlighted-text">servicios</span> </h1>

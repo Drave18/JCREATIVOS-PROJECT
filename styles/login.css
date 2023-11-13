@@ -40,6 +40,7 @@ img {
 }
 
 .login__form {
+  margin-top: 100px;
   position: relative;
   border: 2px solid rgb(0, 230, 199);
   margin-inline: 1.5rem;
@@ -131,10 +132,10 @@ img {
 }
 .login__register {
   text-align: center;
-  color: #000000;
+  color: #ffffff;
 }
 .login__register a {
-  color: #000000;
+  color: #ffffff;
   font-weight: 500;
 }
 .login__register a:hover {
