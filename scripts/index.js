@@ -7,9 +7,17 @@ document.addEventListener("DOMContentLoaded", function() {
     const componenteButton = document.getElementById("componente-button");
     const changeText = document.querySelector(".change_text");
 
+    function resetButtons() {
+      // Remueve la clase 'selected' de todos los botones
+      portatilButton.classList.remove("selected");
+      pcButton.classList.remove("selected");
+      componenteButton.classList.remove("selected");
+    }
     // Agrega un controlador de eventos al botón "Portátil", de esta manera al precionarlo se ejecuta
     // un cambio en el html que tiene la clase change_text para reemplaszarlo por el que se describe a continuacion
     portatilButton.addEventListener("click", () => {
+        resetButtons();
+        portatilButton.classList.add("selected");
         // Cambia el contenido de la sección "change_text" según el botón "Portátil"
         changeText.innerHTML = `
             <p class="landing-services__paragraph">
@@ -57,6 +65,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Agrega un controlador de eventos al botón "PC" y pasa lo mismo que lo anterior
     pcButton.addEventListener("click", () => {
+        resetButtons();
+        pcButton.classList.add("selected");
         // Cambia el contenido de la sección "change_text" según el botón "PC"
         changeText.innerHTML = `
         <p class="landing-services__paragraph">
@@ -108,6 +118,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Agrega un controlador de eventos al botón "Componente"
     componenteButton.addEventListener("click", () => {
+        resetButtons();
+        componenteButton.classList.add("selected");
         // Cambia el contenido de la sección "change_text" según el botón "Componente"
         changeText.innerHTML = `
     <p class="landing-services__paragraph">
@@ -157,3 +169,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+
+
+//HOVER PARA BOTONES

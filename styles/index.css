@@ -163,13 +163,25 @@
     align-items: center;
     justify-content: center;
     border: none;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(218, 3, 3, 0.2);
     border-radius: 3px;
     background-color: #f1f1f1;
     margin: 20px;
 }
 
+/* CSS PARA JAVASCRIPT -----------*/
+.selected{
+    background-color: #3bffd1;
+
+}
+.change_text {
+    opacity: 1;
+    transition: 0.5s ease;
+    /* Ajusta la duración y la función de temporización según tus preferencias */
+}
+
+
+/* ----------------------------------------------------------------------------- */
 .button__text{
     margin-top: 0px;
     margin-bottom: 10px;
@@ -307,4 +319,4 @@
 }
 
 
-/* CSS FOR JAVASCRIPT */
+

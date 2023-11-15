@@ -36,3 +36,69 @@ const showHiddenPass = (loginPass, loginEye) =>{
 //  Finalmente, se llama a la función showHiddenPass con los IDs
 //   específicos para el campo de contraseña y el ícono del ojo en el formulario de inicio de sesión.
  showHiddenPass('login-pass','login-eye')
+
+
+
+
+
+
+
+ //LOCAL STORAGE
+
+const loginForm = document.querySelector(".login__form");
+
+function verifyUser(event){
+      event.preventDefault();
+      console.log(event)
+      const formData = new FormData(event.srcElement)
+      const email = FormData.get("email")
+      const password = FormData.get("password")
+
+      if(email && password){
+         const userData = localStorage.getItem(email)
+         if(!userData){
+            console.log("no hay datos")
+            return
+         }
+            // string a objeto
+      const data = JSON.parse(userData)
+
+      const sameEmail = email === data.email
+      const samePassword = password === data.password
+
+
+      if (sameEmail && samePassword) {
+         console.log("correcto");
+         const loggedUser = { ...data, login: true };
+         localStorage.setItem(email, JSON.stringify(loggedUser));
+         redirectTo("/index.html");
+      } else {
+         // informacion errada
+         console.log("Datos incorrectos");
+      }
+   }
+}
+
+function redirectTo(path) {
+  const a = document.createElement("a");
+  a.href = path;
+  a.click();
+}
+
+
+loginForm.addEventListener("submit",verifyUser)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
