@@ -49,15 +49,17 @@ const loginForm = document.querySelector(".login__form");
 
 function verifyUser(event){
       event.preventDefault();
+      // este console.log es namas de prueba
       console.log(event)
       const formData = new FormData(event.srcElement)
-      const email = FormData.get("email")
-      const password = FormData.get("password")
+      const email = formData.get("email")
+      const password = formData.get("password")
 
       if(email && password){
          const userData = localStorage.getItem(email)
          if(!userData){
-            console.log("no hay datos")
+            document.getElementById("eror-message").innerText =
+            "Su correo no se encuentra registrado";
             return
          }
             // string a objeto
@@ -72,10 +74,12 @@ function verifyUser(event){
          const loggedUser = { ...data, login: true };
          localStorage.setItem(email, JSON.stringify(loggedUser));
          redirectTo("/index.html");
-      } else {
-         // informacion errada
-         console.log("Datos incorrectos");
+      } 
+      else if (!samePassword){
+         document.getElementById("eror-message").innerText =
+         "Contraseña incorrecta";
       }
+
    }
 }
 

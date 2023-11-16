@@ -1,22 +1,26 @@
 // Mostrar contraseña oculta en el formulario de registro
-const showHiddenPass = (registerPass, registerEye) => {
-    const input = document.getElementById(registerPass);
-    const iconEye = document.getElementById(registerEye);
-  
+const showHiddenPass = (passwordField, eyeIcon) => {
+    const input = document.getElementById(passwordField);
+    const iconEye = document.getElementById(eyeIcon);
+
     iconEye.addEventListener('click', () => {
-      if (input.type === 'password') {
-        input.type = 'text';
-        iconEye.classList.add('ri-eye-line');
-        iconEye.classList.remove('ri-eye-off-line');
-      } else {
-        input.type = 'password';
-        iconEye.classList.remove('ri-eye-line');
-        iconEye.classList.add('ri-eye-off-line');
-      }
+        if (input.type === 'password') {
+            input.type = 'text';
+            iconEye.classList.add('ri-eye-line');
+            iconEye.classList.remove('ri-eye-off-line');
+        } else {
+            input.type = 'password';
+            iconEye.classList.remove('ri-eye-line');
+            iconEye.classList.add('ri-eye-off-line');
+        }
     });
-  }
-  
-  showHiddenPass('register-pass', 'register-eye');
+}
+
+showHiddenPass('register-pass', 'register-eye');
+showHiddenPass('confirm-pass', 'confirm-eye');
+
+
+
 
 
 
@@ -35,7 +39,14 @@ function saveUserData(event){
     const lastName = formData.get("lastName")
     const email = formData.get("email")
     const password = formData.get("password")
+    const confirmPassword = formData.get("confirmPassword")
     const gender = formData.get("gender")
+    const mismatchMessage = document.querySelector(".password-mismatch");
+
+    if (password !== confirmPassword) {
+      mismatchMessage.style.display = "block";
+      return;
+    }
 
     if (Name && lastName && email && password && gender){
     const userData = { Name, lastName, email, password, gender};

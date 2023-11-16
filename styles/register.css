@@ -8,18 +8,17 @@ button {
 }
 .background-register{
     width: 100%;
-      height: 100%;
-      color: rgb(0, 0, 0);
-      background-image: linear-gradient(black, rgb(90, 90, 90)),
-        url(../img/login-background.jpg);
+    height: 100%;
+    background-image: linear-gradient(black, rgb(90, 90, 90)),
+      url(../img/login-background.jpg);
 
-      background-attachment: fixed;
-      /* This property is used in CSS to set a background image as fixed or scroll */
-      background-blend-mode: hard-light;
-      background-size: cover;
-      /*defino que su tamaño es el del contenedor*/
-      background-repeat: no-repeat;
-      background-position: center center;
+    background-attachment: fixed;
+    /* This property is used in CSS to set a background image as fixed or scroll */
+    background-blend-mode: hard-light;
+    background-size: cover;
+    /*defino que su tamaño es el del contenedor*/
+    background-repeat: no-repeat;
+    background-position: center center;
 
 }
 
@@ -28,7 +27,10 @@ button {
   border: none;
   outline: none;
 }
-
+/* quitar el boton de revelacion */
+::-ms-reveal {
+  display: none;
+}
 a {
   text-decoration: none;
 }
@@ -97,6 +99,12 @@ img {
 
 .register__box-input {
   position: relative;
+}
+
+.password-mismatch p{
+  font-size: 1.2em;
+  color: #ffffff;
+  font-weight: 700;
 }
 
 #register-gender {
