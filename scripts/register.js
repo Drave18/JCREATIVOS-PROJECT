@@ -49,7 +49,7 @@ function saveUserData(event){
     }
 
     if (Name && lastName && email && password && gender){
-    const userData = { Name, lastName, email, password, gender};
+    const userData = { Name, lastName, email, password, gender, login:false};
     console.log(userData);
     const str = JSON.stringify(userData);
     console.log(str);

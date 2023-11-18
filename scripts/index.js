@@ -171,4 +171,31 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+
+
+//LOCALSTORAGE
+
+
+// Obtener los datos del usuario desde el almacenamiento local 
+const storedUserData = localStorage.getItem("email")
+const login = document.getElementById("login")
+const register = document.getElementById("register")
+const userSection = document.querySelector(".user-section")
+const userName = document.getElementById("username")
+if (storedUserData) {
+  // Convertir los datos del usuario de JSON a un objeto JavaScript
+  const loggedUser = JSON.parse(storedUserData);
+
+  // Verificar si el atributo login está establecido en true
+    if (loggedUser.login === true) {
+    login.style.display = "none";
+    register.style.display = "none";
+
+    // Mostrar la sección del usuario
+    userSection.style.display = "block";
+    userName("username").innerHTML =
+    loggedUser.Name;
+ }
+}
+
 //HOVER PARA BOTONES

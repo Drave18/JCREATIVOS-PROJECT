@@ -142,10 +142,10 @@ img {
   display: flex;
   justify-content: center;
 } */
-#eror-message{
+.error-message{
   font-size: 1.2em;
   color: #ffffff;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .login__register a:hover {

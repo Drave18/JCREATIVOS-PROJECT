@@ -54,35 +54,37 @@ function verifyUser(event){
       const formData = new FormData(event.srcElement)
       const email = formData.get("email")
       const password = formData.get("password")
+      const errorMessage = document.querySelector(".error-message")
 
-      if(email && password){
-         const userData = localStorage.getItem(email)
-         if(!userData){
-            document.getElementById("eror-message").innerText =
-            "Su correo no se encuentra registrado";
-            return
-         }
-            // string a objeto
-      const data = JSON.parse(userData)
+      if (email && password) {
+        const userData = localStorage.getItem(email);
+        if (!userData) {
+         errorMessage.innerText =
+         "Su correo no se encuentra registrado"
+         errorMessage.style.display = "block"
+          return
+        }
+        // string a objeto
+        const data = JSON.parse(userData);
 
-      const sameEmail = email === data.email
-      const samePassword = password === data.password
+        const sameEmail = email === data.email;
+        const samePassword = password === data.password;
 
-
-      if (sameEmail && samePassword) {
-         console.log("correcto");
-         const loggedUser = { ...data, login: true };
-         localStorage.setItem(email, JSON.stringify(loggedUser));
-         redirectTo("/index.html");
-      } 
-      else if (!samePassword){
-         document.getElementById("eror-message").innerText =
+        if (sameEmail && samePassword) {
+          console.log("correcto");
+          const loggedUser = { ...data, login: true };
+          localStorage.setItem(email, JSON.stringify(loggedUser));
+          redirectTo("/index.html");
+        } else if (!samePassword) {
+         errorMessage.innerText =
          "Contraseña incorrecta";
+         errorMessage.style.display = "block";
+         return;
+        }
       }
-
-   }
 }
 
+// Aqui esta la funcion que uso para reediigir arriba
 function redirectTo(path) {
   const a = document.createElement("a");
   a.href = path;
@@ -91,6 +93,8 @@ function redirectTo(path) {
 
 
 loginForm.addEventListener("submit",verifyUser)
+
+
 
 
 
