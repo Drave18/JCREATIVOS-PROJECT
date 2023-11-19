@@ -31,6 +31,7 @@ header{
     border-radius: 15px;
     padding: 10px;
 }
+
 .navbar{
     display: flex;
 }
@@ -59,6 +60,16 @@ header{
     align-items: center;
 }
 .main a{
+    margin-right: 25px;
+    margin-left: 10px;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+    transition: all .50s ease;
+}
+
+/* Aplico estilos similares al username y el boton de cerrar sesion */
+.main #username, #logout{
     margin-right: 25px;
     margin-left: 10px;
     color: white;
@@ -97,6 +108,22 @@ header{
     color: #000000;
     /* Cambia el color del texto al pasar el mouse sobre el enlace */
 }
+
+
+#logout {
+    border: 5px solid #ffffff;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: transparent;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#logout:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
 
 #menu-icon{
     color: white;

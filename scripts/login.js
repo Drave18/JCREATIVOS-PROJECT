@@ -73,7 +73,7 @@ function verifyUser(event){
         if (sameEmail && samePassword) {
           console.log("correcto");
           const loggedUser = { ...data, login: true };
-          localStorage.setItem(email, JSON.stringify(loggedUser));
+          localStorage.setItem("currentUser", JSON.stringify(loggedUser));
           redirectTo("/index.html");
         } else if (!samePassword) {
          errorMessage.innerText =

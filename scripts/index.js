@@ -175,27 +175,45 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //LOCALSTORAGE
 
+// Obtener los datos del usuario desde el almacenamiento local
 
-// Obtener los datos del usuario desde el almacenamiento local 
-const storedUserData = localStorage.getItem("email")
-const login = document.getElementById("login")
-const register = document.getElementById("register")
-const userSection = document.querySelector(".user-section")
-const userName = document.getElementById("username")
-if (storedUserData) {
-  // Convertir los datos del usuario de JSON a un objeto JavaScript
-  const loggedUser = JSON.parse(storedUserData);
 
-  // Verificar si el atributo login está establecido en true
-    if (loggedUser.login === true) {
-    login.style.display = "none";
-    register.style.display = "none";
+const userInfo = document.getElementById("username");
 
-    // Mostrar la sección del usuario
-    userSection.style.display = "block";
-    userName("username").innerHTML =
-    loggedUser.Name;
- }
+function ShowUserName(){
+    currentUser = localStorage.getItem("currentUser");
+    if (currentUser){
+        const p = document.createElement("p");
+        const user = JSON.parse(currentUser);
+        p.textContent = user.Name;
+        userInfo.appendChild(p);
+        // mostrar info de usuario
+        userInfo.style.display = "block";
+        // quitar boton de login y register
+        const login = document.getElementById("login");
+        login.style.display = "none";
+        const register = document.getElementById("register");
+        register.style.display = "none";
+
+        //boton de logout aparecer 
+        const logout = document.getElementById("logout");
+        logout.style.display = "block";
+        logout.addEventListener("click",()=>{
+            p.textContent = ""
+            localStorage.removeItem("currentUser");
+            logout.style.display = "none";
+
+            login.style.display = "block";
+            register.style.display = "block";
+
+
+        })
+    }
 }
+
+ShowUserName()
+
+
+
 
 //HOVER PARA BOTONES
