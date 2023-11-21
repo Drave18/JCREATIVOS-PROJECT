@@ -6,7 +6,7 @@
     color: #00FFC2;
 }
 
-.optimization__title, .overclock__title, .optimization__price, .overclock__price{
+.optimization__title, .overclock__title, .optimization__price, .overclock__price, .overclock__subtitle, .optimization__subtitle{
     text-align: center;
 }
 
@@ -38,3 +38,25 @@
 .computers__overclock{
     margin-top: 2em;
 }
+
+@media screen and (max-width: 1250px) {
+    .computers{
+        margin-top: 7em;
+    }
+    .computers__optimization,
+    .computers__overclock {
+        text-align: justify;
+        margin: 0 auto;
+        max-width: 80%;
+        /* Ajusta el ancho máximo según tu preferencia */
+    }
+
+    .optimization__price,
+    .overclock__price {
+        text-align: center;
+        /* Alinea el texto al centro */
+    }
+}
+
+
+

@@ -23,3 +23,26 @@
 .graphics_cards__subtitle{
     margin-bottom: 1em;
 }
+
+
+
+
+
+
+@media screen and (max-width: 1250px) {
+    .graphics_cards {
+        margin-top: 7em;
+    }
+
+    .graphics_cards__container {
+        text-align: justify;
+        margin: 0 auto;
+        max-width: 80%;
+        /* Ajusta el ancho máximo según tu preferencia */
+    }
+
+    .graphics_cards__price,
+    .graphics_cards__subtitle, .graphics_cards__title{
+        text-align: center;
+    }
+}

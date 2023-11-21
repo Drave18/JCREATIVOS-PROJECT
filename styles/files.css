@@ -22,3 +22,21 @@
 .files__subtitle{
     margin-bottom: 1em;
 }
+
+
+@media screen and (max-width: 1250px) {
+    .files {
+        margin-top: 7em;
+    }
+
+    .files__recover{
+        text-align: justify;
+        margin: 0 auto;
+        max-width: 80%;
+        /* Ajusta el ancho máximo según tu preferencia */
+    }
+
+    .files__price, .files__subtitle{
+        text-align: center;
+    }
+}
