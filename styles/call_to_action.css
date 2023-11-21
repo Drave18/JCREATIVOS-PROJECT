@@ -66,7 +66,32 @@
 
 }
 
+@media screen and (max-width:480px) {
+
+    .button__text {
+        margin-top: 0px;
+        margin-bottom: 7.5px;
+        font-size: 0.1.125em;
+        font-weight: 600;
+    }
+
+    .button__image {
+        width: 50.25px;
+        height: 50.25px;
+    }
+}
+
 @media screen and (max-width: 610px) {
+    .call_to_action__buttons{
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        
+    }
+    .button {
+            width: 118.5px;
+            height: 118.5px;
+        }
     .call_to_action__action-buttons {
         width: 144px;
         height:52.5px;

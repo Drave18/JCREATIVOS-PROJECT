@@ -60,7 +60,7 @@ function saveUserData(event){
 
   function redirectToLogin(){
     const a = document.createElement("a")
-    a.href = "/pages/Login.html"
+    a.href = "../pages/Login.html"
     a.click()
   }
 

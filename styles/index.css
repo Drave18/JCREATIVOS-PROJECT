@@ -18,7 +18,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    text-align: center;
 }
 /* ---------------------DESCRIPTION------------------------------- */
 .description{
@@ -109,7 +108,7 @@
 }
 .landing-services__title{
     font-weight: 800;
-    font-size: 70px;
+    font-size: 4em;
     text-align: center;
     margin-bottom: 0.5em;
     margin-top: 3em;
@@ -337,19 +336,19 @@
 /* RESPONSIVE */
 
 @media screen and (max-width: 1371px) {
-
                 .description {
                     width: 100%;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    text-align: justify;
+                    
                     /* Alinea el texto al centro */
                     padding: 0 20px;
                     /* Añade espacio a los lados si es necesario */
                 }
         
                 .description__items {
+                    width: 100%;
                     flex-direction: column;
                     align-items: center;
                     /* Alinea el texto al centro */
@@ -367,32 +366,69 @@
                     width: 80%;
                     /* Ajusta el ancho del texto */
                 }
+                .description__text{
+                    text-align: justify;
+                }
                 
 }
 
 
 @media screen and (max-width: 800px){
-    .hero{
-        font-size: 0.7em;
+    .hero__text{
+        font-size: 1.5em;
+    }
+
+}
+
+@media screen and (min-width:480px) and (max-width:1371px){
+    .description__title {
+            text-align: center;
+        }
+}
+
+@media screen and (max-width:1000px){
+    .landing-services__title {
+            font-size: 3em;
+
+        }
+    .why-us__title{
+        font-size: 2.5em;
     }
 }
 
+@media screen and (max-width: 1270px) {
 
-@media screen and (max-width:480px){
-    .button {
-            width: 118.5px;
-            height: 118.5px;
+    .landing-services__paragraph,
+    .why-us__paragraph {
+        text-align: justify;
+        margin: 0 auto;
+        max-width: 80%;
+        /* Ajusta el ancho máximo si es necesario */
+    }
+
+    .landing-services__paragraph,
+    .why-us__paragraph {
+        margin-top: 20px;
+        /* Agrega un poco de separación entre los párrafos si es necesario */
+    }
+
+        .landing-services__box-list {
+            flex-direction: column;
+            align-items: center;
+            
         }
     
-        .button__text {
-            margin-top: 0px;
-            margin-bottom: 7.5px;
-            font-size: 0.1.125em;
-            font-weight: 600;
+        .landing-services__box-list li {
+            font-size: 1em;
+            
         }
-    
-        .button__image {
-            width: 50.25px;
-            height: 50.25px;
+        .landing-services__list{
+            margin-top: 1em;
+        }
+        .landing-services__list h4{
+            margin-bottom: 0.5em;
+        }
+        .reviews__title{
+            text-align: center;
         }
 }

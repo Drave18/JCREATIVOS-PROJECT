@@ -74,7 +74,7 @@ function verifyUser(event){
           console.log("correcto");
           const loggedUser = { ...data, login: true };
           localStorage.setItem("currentUser", JSON.stringify(loggedUser));
-          redirectTo("/index.html");
+          redirectTo("../index.html");
         } else if (!samePassword) {
          errorMessage.innerText =
          "Contraseña incorrecta";
