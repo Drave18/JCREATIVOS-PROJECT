@@ -15,22 +15,7 @@
 
 }
 
-.call_to_action__action-buttons{
-    cursor:pointer;
-    width: 192px;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(0, 0, 0);
-    color: rgb(0, 0, 0);
-    font-size: 1.25em;
-    font-weight: 700;
-    border-radius: 34px;
-    border: none;
-    width: 100%;
 
-}
 .call_to_action__center-text{
     display: flex;
     flex-direction: column;
@@ -52,7 +37,9 @@
 }
 
 
+
 .call_to_action__action-buttons{
+    cursor: pointer;
     width: 192px;
     height: 70px;
     display: flex;
@@ -66,6 +53,7 @@
     border: none;
     margin-right: 10px;
 }
+
 .call_to_action__action-buttons img{
     width: 29px;
     height: 29px;
@@ -76,4 +64,25 @@
     background-color: rgb(185, 185, 185); 
     transition-duration: 0.5s;
 
+}
+
+@media screen and (max-width: 610px) {
+    .call_to_action__action-buttons {
+        width: 144px;
+        height:52.5px;
+        font-size: 1em;
+    }
+    .call_to_action__action-buttons img {
+        width: 21.75px;
+        height: 75px.5px;
+        margin-right: 5.25px;
+    }
+
+    .call_to_action__title {
+        font-size: 2em;
+    }
+
+    .call_to_action__paragraph {
+        font-size: 1.2em;
+    }
 }

@@ -58,3 +58,22 @@ footer a:hover{
 .socialbtns a {
     margin-right: 10px; /* espacio entre botones*/
 }
+
+
+@media (max-width: 721px) {
+    footer {
+        grid-template-columns: 1fr;
+        /* Cambiar a una sola columna */
+        grid-template-rows: auto;
+        /* Permitir que las filas se ajusten automáticamente */
+        text-align: center;
+        /* Alinear el texto al centro */
+    }
+
+    .servicios-footer,
+    .contacto-footer,
+    .socialbtns {
+        order: 1;
+        /* Cambiar el orden para mostrar estos elementos después */
+    }
+}

@@ -14,11 +14,12 @@
 @import "./files.css";
 @import "./graphics_cards.css";
 
+ 
 *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    scroll-behavior: smooth !important;
+    scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
 .container{
@@ -36,5 +37,11 @@ h2{font-size: 2.7em}
 h3{font-size: 1.7em;}
 h4{font-size: 1.7em;}
 p{font-size: 1.25em;}
+a {text-decoration: none;}
 
+input,
+button {
+    border: none;
+    outline: none;
+}
 

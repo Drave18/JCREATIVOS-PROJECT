@@ -17,23 +17,17 @@
 
 }
 
-input,
-button {
-  border: none;
-  outline: none;
-}
+
 /* quitar el boton de revelacion */
 ::-ms-reveal {
   display: none;
 }
-a {
-  text-decoration: none;
-}
 
-img {
+
+/* img {
   max-width: 100%;
   height: auto;
-}
+} */
 
 /* Estilos específicos para la página de registro */
 .register {

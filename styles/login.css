@@ -14,19 +14,13 @@
   background-position: center center; 
 }
 
-input,button {
-  border: none;
-  outline: none;
-}
 
-a {
-  text-decoration: none;
-}
 
-img {
+
+/* img {
   max-width: 100%;
   height: auto;
-}
+} */
 
 /*=============== LOGIN ===============*/
 .login {
