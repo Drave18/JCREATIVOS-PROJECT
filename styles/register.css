@@ -24,10 +24,6 @@
 }
 
 
-/* img {
-  max-width: 100%;
-  height: auto;
-} */
 
 /* Estilos específicos para la página de registro */
 .register {
@@ -97,21 +93,14 @@
 }
 
 #register-gender {
-  /* Color de fondo */
   color: rgb(255, 255, 255);
-  /* Color del texto */
   border: none;
-  /* Elimina el borde (si es necesario) */
   padding: 10px;
-  /* Añade espacio alrededor del texto */
   border-radius: 5px;
-  /* Añade bordes redondeados si deseas */
 }
 #register-gender:focus {
   background-color: #ffffff;
-  /* Cambia el color de fondo a blanco */
   color: #000000;
-  /* Cambia el color del texto a negro */
 }
 .register__label {
   position: absolute;
@@ -181,7 +170,8 @@
   font-size: 0.813rem;
 }
 
-/* Estilos para dispositivos más grandes */
+
+/* RESPONSIVE */
 @media screen and (min-width: 576px) {
   .register {
     justify-content: center;

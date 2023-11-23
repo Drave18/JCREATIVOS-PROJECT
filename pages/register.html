@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +15,7 @@
    <!-- IMPORTACION DE BOXICONS -->
    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
+
 <body id="background-register">
    <header>
       <a href="../index.html" class="logo">TAKT</a>
@@ -25,7 +27,7 @@
       </ul>
       <div class="main">
          <a href="../pages/Login.html" class="user" id="login"><i class="ri-user-fill"></i>Iniciar Sesion</a>
-         <!-- uso del menu de remix icons -->
+         <!-- USO DEL MENU DE REMIX ICONS -->
          <div class="bx bx-menu" id="menu-icon"></div>
       </div>
       <script src="../scripts/nav.js"></script>
@@ -38,7 +40,8 @@
             <div class="register__box">
                <i class="ri-user-3-line register__icon"></i>
                <div class="register__box-input">
-                  <input type="text" name="Name" required class="register__input" id="register-firstname" placeholder=" ">
+                  <input type="text" name="Name" required class="register__input" id="register-firstname"
+                     placeholder=" ">
                   <label for="register-firstname" class="register__label">Nombres</label>
                </div>
             </div>
@@ -46,7 +49,8 @@
             <div class="register__box">
                <i class="ri-user-3-line register__icon"></i>
                <div class="register__box-input">
-                  <input type="text" name="lastName" required class="register__input" id="register-lastname" placeholder=" ">
+                  <input type="text" name="lastName" required class="register__input" id="register-lastname"
+                     placeholder=" ">
                   <label for="register-lastname" class="register__label">Apellidos</label>
                </div>
             </div>
@@ -61,7 +65,8 @@
             <div class="register__box">
                <i class="ri-lock-2-line register__icon"></i>
                <div class="register__box-input">
-                  <input type="password" name="password" required class="register__input" id="register-pass" placeholder=" ">
+                  <input type="password" name="password" required class="register__input" id="register-pass"
+                     placeholder=" ">
                   <label for="register-pass" class="register__label">Contraseña</label>
                   <i class="ri-eye-off-line register__eye" id="register-eye"></i>
                </div>
@@ -70,12 +75,15 @@
             <div class="register__box">
                <i class="ri-lock-2-line register__icon"></i>
                <div class="register__box-input">
-                  <input type="password" name="confirmPassword" required class="register__input" id="confirm-pass" placeholder=" ">
+                  <input type="password" name="confirmPassword" required class="register__input" id="confirm-pass"
+                     placeholder=" ">
                   <label for="confirm-pass" class="register__label">Confirmar Contraseña</label>
                   <i class="ri-eye-off-line register__eye" id="confirm-eye"></i>
                </div>
             </div>
-<div class="password-mismatch" style="display: none;"><p>Las contraseñas no coinciden</p></div>
+            <div class="password-mismatch" style="display: none;">
+               <p>Las contraseñas no coinciden</p>
+            </div>
 
             <div class="register__box">
                <i class="ri-genderless-line register__icon"></i>
@@ -101,4 +109,5 @@
 
    <script src="../scripts/register.js"></script>
 </body>
+
 </html>

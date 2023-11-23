@@ -48,15 +48,11 @@
         text-align: justify;
         margin: 0 auto;
         max-width: 80%;
-        /* Ajusta el ancho máximo según tu preferencia */
     }
 
     .optimization__price,
     .overclock__price {
         text-align: center;
-        /* Alinea el texto al centro */
     }
 }
-
-
 

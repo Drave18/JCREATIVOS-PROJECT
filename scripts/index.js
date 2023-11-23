@@ -173,7 +173,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-//LOCALSTORAGE
+//LOCALSTORAGE-------------------------------------------------------------------------------------------
 
 // Obtener los datos del usuario desde el almacenamiento local
 
@@ -200,12 +200,12 @@ function ShowUserName(){
         logout.style.display = "block";
         logout.addEventListener("click",()=>{
             p.textContent = ""
+            userInfo.style.display = "none";
             localStorage.removeItem("currentUser");
             logout.style.display = "none";
 
             login.style.display = "block";
             register.style.display = "block";
-
 
         })
     }

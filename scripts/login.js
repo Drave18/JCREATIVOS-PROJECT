@@ -43,7 +43,7 @@ const showHiddenPass = (loginPass, loginEye) =>{
 
 
 
- //LOCAL STORAGE
+ //LOCAL STORAGE----------------------------------------------------------------------------------------
 
 const loginForm = document.querySelector(".login__form");
 

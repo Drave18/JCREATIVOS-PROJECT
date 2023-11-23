@@ -17,12 +17,8 @@
 
 
 
-/* img {
-  max-width: 100%;
-  height: auto;
-} */
 
-/*=============== LOGIN ===============*/
+/*-----------------LOGIN----------------------------------------*/
 .login {
   position: relative;
   height: 100vh;
@@ -91,24 +87,6 @@
   padding-right: 1.8rem;
 }
 
-/* .login__check, .login__check-group {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.login__check {
-  margin-bottom: 1.5rem;
-}
-.login__check-label, .login__forgot, .login__register {
-  font-size: .813rem;
-}
-.login__check-group {
-  column-gap: 0.5rem;
-}
-.login__check-input {
-  width: 16px;
-  height: 16px;
-} */
 
 .login__button {
   width: 100%;
@@ -128,11 +106,7 @@
   font-weight: 500;
 }
 
-/* .message{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-} */
+
 .error-message{
   font-size: 1.2em;
   color: #ffffff;
@@ -156,7 +130,7 @@
 }
 
 
-/* Responsive */
+/* RESPONSIVE */
 @media screen and (min-width: 576px) {
   .login {
     justify-content: center;

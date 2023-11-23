@@ -4,8 +4,8 @@
     height: 30em;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centra verticalmente */
-    align-items: center; /* Centra horizontalmente */
+    justify-content: center; 
+    align-items: center; 
     text-align: center;
 }
 
@@ -14,8 +14,6 @@
     justify-content: center;
 
 }
-
-
 .call_to_action__center-text{
     display: flex;
     flex-direction: column;
@@ -66,7 +64,7 @@
 
 }
 
-
+/* RESPONSIVE */
 @media screen and (max-width: 610px) {
     .call_to_action__buttons{
         flex-direction: column;

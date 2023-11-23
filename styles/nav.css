@@ -91,22 +91,18 @@ header{
 
 .main a:hover {
     color: #00FFC2;
-    /* Cambia el color del texto al pasar el mouse sobre el enlace */
-    /* Agrega un subrayado al enlace al pasar el mouse sobre él */
+
 }
 
 #login:hover {
     transform: scale(1.10);
     /* Escala el tamaño del ícono al pasar el mouse sobre él */
     transition: 0.3s ease;
-    /* suavizar el efecto de escala */
 }
 
 #register:hover {
     background-color: #ffffff;
-    /* Cambia el color de fondo al pasar el mouse sobre el enlace */
     color: #000000;
-    /* Cambia el color del texto al pasar el mouse sobre el enlace */
 }
 
 
@@ -132,6 +128,12 @@ header{
     z-index: 1001;
     display: none;
 }
+
+
+
+
+
+
 @media (max-width: 502px){
     .main a {
         font-size: 1em;
@@ -139,7 +141,7 @@ header{
 }
 
 
-@media (max-width: 1280px){
+@media (max-width: 1318px){
     header{
         padding:14px 2%;
         transition: .2s;
@@ -186,11 +188,11 @@ header{
         color: #00FFC2;
     }
     .navbar.open{
-        right: 2%;
+        right: 0%;
     }
 }
 
-/* mavnar */
+/* ESTILOS PARA CUANDO APARECE EL USUARIO Y EL BOTON CERRAR SESION */
 
 #username {
     color: white;

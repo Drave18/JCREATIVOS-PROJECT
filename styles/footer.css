@@ -7,8 +7,6 @@ footer{
     gap: 20px; /* Space between columns */
     padding: 20px;
     position: absolute;
-    text-align: center; /*align text to center*/
-
 }
 footer a{
     text-decoration: none;
@@ -59,7 +57,7 @@ footer a:hover{
     margin-right: 10px; /* espacio entre botones*/
 }
 
-
+/* RESPONSIVE */
 @media (max-width: 721px) {
     footer {
         grid-template-columns: 1fr;
@@ -67,7 +65,6 @@ footer a:hover{
         grid-template-rows: auto;
         /* Permitir que las filas se ajusten automáticamente */
         text-align: center;
-        /* Alinear el texto al centro */
     }
 
     .servicios-footer,

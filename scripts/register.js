@@ -27,7 +27,7 @@ showHiddenPass('confirm-pass', 'confirm-eye');
 
 
 
- //LOCAL STORAGE
+ //LOCAL STORAGE---------------------------------------------------------------------------------------
 
 const form = document.querySelector(".register__form");
 
