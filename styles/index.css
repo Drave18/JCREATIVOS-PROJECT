@@ -6,7 +6,7 @@
 }
 
 .hero{
-    background-image: url("../img/background-header.png"); /*Agrego imagen de fondo*/
+    background-image: url("../img/background-header.webp"); /*Agrego imagen de fondo*/
     background-size: cover; /*defino que su tamaño es el del contenedor*/
     background-repeat: no-repeat;/*hago que no se repita el fondo*/
     background-position: center center;  /*lo centro*/
@@ -324,7 +324,10 @@
 #index{
     width: 100%;
     height: 30em;
-    background-image: url("../img/pexels-it-services-eu-7639373.png");
+    background-image: linear-gradient(0deg,
+    /* 0-1 tranparencia */
+            rgba(87, 87, 87, 0.3),
+            rgba(24, 24, 24, 0.6)),url("../img/pexels-it-services-eu-7639373.webp");
     background-size: cover; /*defino que su tamaño es el del contenedor*/
     background-repeat: no-repeat;
     background-position: center center; 
@@ -346,19 +349,35 @@
 /* -----------------------------------------------RESPONSIVE-----------------------------------------------------------*/
 
 /* HERO */
-@media screen and (max-width: 900px) {
+@media screen and (max-width:600px) {
     .hero__text {
         padding: 0 1%;
     }
 
     .hero h1 {
-        font-size: 6em;
+        font-size: 7em;
     }
 
     .hero p {
-        font-size: 2em;
+        font-size: 2.5em;
         text-align: center;
     }
+
+}
+
+@media screen and (min-width:600px) and (max-width:800px) {
+    .hero__text {
+            padding: 0 1%;
+        }
+    
+        .hero h1 {
+            font-size: 5em;
+        }
+    
+        .hero p {
+            font-size: 2em;
+            text-align: center;
+        }
 
 }
 /* DESCRIPRTION */

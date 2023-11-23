@@ -27,6 +27,8 @@
 
 /* Estilos específicos para la página de registro */
 .register {
+  margin-top: 20vh;
+  margin-bottom: 20vh;
   position: relative;
   height: 100vh;
   display: grid;
@@ -34,7 +36,7 @@
 }
 
 .register__form {
-  margin-top: 150px;
+  height: 100%;
   position: relative;
   border: 2px solid rgb(0, 230, 199);
   margin-inline: 1.5rem;
