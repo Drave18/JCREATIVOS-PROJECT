@@ -68,7 +68,7 @@ header{
     transition: all .50s ease;
 }
 
-/* Aplico estilos similares al username y el boton de cerrar sesion */
+/* Aqui aplico estilos similares al username y el boton de cerrar sesion */
 .main #username, #logout{
     margin-right: 25px;
     margin-left: 10px;
@@ -128,8 +128,36 @@ header{
     z-index: 1001;
     display: none;
 }
+@media screen and (min-width: 390px)and (max-width:416px){
+    .main a{
+        margin-right: 15px;
+    }
+    .user i {
+            font-size: 15px;
+        }
+    
+}
 
-
+@media (max-width: 460px){
+    .user i {
+            font-size: 20px;
+        }
+    #login{
+        font-size: 0.8em;
+    }
+    #register{
+        font-size: 0.8em;
+        border: 3px solid #ffffff;
+    }
+    #username p{
+        font-size: 0.8em;
+    }
+    #logout {
+            font-size: 0.8em;
+            padding: 10px;
+            border: 3px solid #ffffff;
+        }
+}
 
 
 
