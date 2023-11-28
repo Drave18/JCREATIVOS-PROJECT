@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
       pcButton.classList.remove("selected");
       componenteButton.classList.remove("selected");
     }
+    
     // Agrega un controlador de eventos al botón "Portátil", de esta manera al precionarlo se ejecuta
     // un cambio en el html que tiene la clase change_text para reemplaszarlo por el que se describe a continuacion
     portatilButton.addEventListener("click", () => {
@@ -172,12 +173,3 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-
-//LOCALSTORAGE-------------------------------------------------------------------------------------------
-
-// Obtener los datos del usuario desde el almacenamiento local
-
-
-
-
-//HOVER PARA BOTONES

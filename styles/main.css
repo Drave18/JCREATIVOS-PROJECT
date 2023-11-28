@@ -14,12 +14,14 @@
 @import "./files.css";
 @import "./graphics_cards.css";
 
+html{
+    scroll-behavior: smooth;
+}
 
 *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
 .container{
@@ -44,4 +46,5 @@ button {
     border: none;
     outline: none;
 }
+
 

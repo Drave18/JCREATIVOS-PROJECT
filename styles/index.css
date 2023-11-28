@@ -189,6 +189,7 @@
     margin: 20px;
 }
 
+
 .button__text {
     margin-top: 0px;
     margin-bottom: 10px;
@@ -206,6 +207,7 @@
 /* CSS PARA JAVASCRIPT -----------*/
 .selected{
     background-color: #3bffd1;
+    transition: 0.5s;
 
 }
 .change_text {
@@ -484,4 +486,8 @@
         .reviews__title{
             text-align: center;
         }
+}
+
+section[id="reviews"] {
+    scroll-margin-top: 5em;
 }

@@ -121,15 +121,19 @@
 }
 
 /* Cambiar icono del ojo al mostrar/ocultar contraseña */
+/* estilos a un input que es el cuarto hijo de un elemento con la clase */
 .register__box:nth-child(4) input {
   padding-right: 1.8rem;
 }
 
 /* Estilos para el select de género */
+/* Aquí aplico estilos a un pseudo-elemento (::before) de un elemento que sigue 
+inmediatamente a otro elemento con la clase register__input */
 .register__input+.register__label::before {
   position: absolute;
   right: 10px;
   top: 50%;
+  /* mover en y -50% */
   transform: translateY(-50%);
   pointer-events: none;
 }
@@ -166,7 +170,11 @@
   font-size: 0.813rem;
 }
 
-/* Mantener la etiqueta superior en su lugar cuando el input tiene contenido */
+
+/* modifican la posición y tamaño de las etiquetas que describen los campos de formulario 
+(como "Nombre", "Correo electrónico", etc.) dependiendo del estado del campo de entrada
+(si está enfocado o tiene contenido, respectivamente). */
+
 .register__input:not(:placeholder-shown).register__input:not(:focus)+.register__label {
   top: -12px;
   font-size: 0.813rem;
